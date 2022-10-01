@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6c578579b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Desserts.css">
+    <link rel="icon" href="DessertsImages/Dessertspage.png">
+    <title>Desserts</title>
+</head>
+
+<body onload="myFunction()">
+    
+        <!-------------loading animation Starts to roll------------>
+          <div id="loader"></div>
+
+    <!-----------------header navigation var------------------->
+    <div class="header">
+        <div class="burgerMenu" style="user-select: none;" onclick="navOpen()">
+          &#9776
+        </div>
+  
+        <div class="spongePhoto">
+          <img src="/images/sponge2.png" class="spongePhoto2" alt="">
+        </div>
+  
+        <div class="sign-In">
+          <p id="signIn">Sign In</p>
+          <img src="/images/pictureFour.jpg" class="sponge1" alt="">
+  
+        </div>  
+      </div>
+    
+    <div class="main-container" id="myDiv" style="display: none;"> 
+
+        
+        
+<!-------------------------------------Hidden left side navigation bar-------------------------->
+<div class="leftSideNav" id="navId" style="z-index: 2;">
+    <a href="#" id="btnClose" onclick="navClose()">&times;</a>
+    <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-house" style="margin-right: 15px;"></i> Home</a>
+    <a href="https://goo.gl/maps/eRH3zBimoB4CzRw5A" target="_blank"><i class="fa-solid fa-shop" style="margin-right: 15px;"></i> Stores</a>
+    <a href="#" onclick="menu()"><i class="fa-solid fa-utensils"  style="margin-right: 15px;"></i> Menu</a>
+       
+    <!--Dropdown div use to hide and show the menu list-->
+                <div class="dropdown" id="myMenu">
+    
+                   <!--list item shows the menu list-->
+                       <div id="list-itemOne">
+                            <a href="http://127.0.0.1:5500/menuPage.html">Menu Page</a>
+                           <a href="http://127.0.0.1:5500/bestSeller.html">Best Sellers</a>
+                           <a href="http://127.0.0.1:5500/newProducts.html">New Products</a>
+                           <a href="http://127.0.0.1:5500/familyMeals.html">Family Meals</a>
+                           <a href="http://127.0.0.1:5500/breakFastJoys.html">Breakfast Joys</a>
+                           <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+                           <a href="http://127.0.0.1:5500/Chickenjoy.html">chickenJoy</a>
+                           <a href="http://127.0.0.1:5500/Burgers.html">Burgers</a>
+                           <a href="http://127.0.0.1:5500/JollySpaghetti.html">Jolly Spaghetti</a>
+                           <a href="http://127.0.0.1:5500/burgerSteak.html">Burger Steak</a>
+                           <a href="http://127.0.0.1:5500/superMeals.html">Super Meals</a>
+                           <a href="http://127.0.0.1:5500/chickenSandwich.html">Chicken Sandwich</a>
+                           <a href="http://127.0.0.1:5500/jollyHotdog&Pies.html">Jolly Hotdog & Pies</a>
+                           <a href="http://127.0.0.1:5500/Palabok.html">Palabok</a>
+                           <a href="http://127.0.0.1:5500/Fries&Sides.html">Fries and Sides</a>
+                           <a href="http://127.0.0.1:5500/Desserts.html">Desserts</a>
+                           <a href="http://127.0.0.1:5500/Beverages.html">Beverages</a>
+                           <a href="http://127.0.0.1:5500/JollyKiddieMeal.html">Jolly Kiddie Meal</a>
+                       </div>
+              </div>               
+   
+    <a href="#"><i class="fa-solid fa-bell-concierge" style="margin-right: 15px;"></i>About</a>
+</div> 
+
+<!-----------------------------------------End of left navbar------------------------------------->
+
+
+           <!--Best Seller Bar-->
+    <div class="sellerBar">
+        <h3 id="arrow">&#8592</h3>
+        <h3 id="bestTitle">Desserts</h3>
+    </div>
+
+    
+
+     <!--------------------------------First Column of the content--------------------------------> 
+  
+     <div class="columnOne">
+        <!--Card One column One-->
+      <div class="columnOnePic1"
+           style="height:283px; width:auto; 
+                  background-color:  #e4163d; color: white;
+                  margin-right: 10px; border-radius: 4px;                                                           
+                  margin-left: 10px; position: relative;">
+                         
+      <img src="/DessertsImages/SnackTimeFamilySaversFor3.png" alt="SnackTimeFamilySaversFor3" 
+           style="background-color:aliceblue;                   
+                  width: 100%; height: auto; ">
+       
+           <h4 style="padding-left:20px;
+                      margin-top: 20px;">Snack Time Family Savers <br>
+        for 3</h4> <br>
+      
+       <p style="padding-left: 20px ; font-size: 13px;
+                 margin-top: -12px;">Starts at &#8369 265.00</p> 
+       <p style="position:absolute; font-size: 20px; text-align: center;
+                 top: 8px; right: 10px; color: orange; align-items: center;
+                 border: 2px solid orange; border-radius: 50px;
+                 width: 15px; height: 15px; justify-content: center;
+                 margin-left: auto; margin-right: auto; display: flex;"
+          id="columnOnePic1Hover" onclick="columnOnePic1Hover()"       
+                 >i</p>
+    </div> 
+    
+    <!--card two column one-->
+      <div class="columnOnePic2"
+       style="height:283px; width: auto;
+              background-color:  #e4163d; color: white;
+              border-radius: 4px; position: relative;" >
+      <img src="/DessertsImages/assortedDozenPiesTo-go.png" alt="assortedDozenPiesTo-go"
+           style="background-color:aliceblue;
+                  margin-left: auto; margin-right: auto;
+                  width: 100%; ">
+    
+          <h4 style="padding-left:20px;
+                     margin-top: 20px;">Assorted Dozen Pies To-Go</h4>     
+          <br>
+          <p style="padding-left:20px ; font-size: 13px;
+                    margin-top: -12px;">Starts at &#8369 403.00</p>
+          <p style="position: absolute; color: orange; top: 8px;
+                    font-size: 20px; width: 15px; height: 15px;
+                    border: 2px solid orange; border-radius: 50%;
+                    display: flex; align-items: center; justify-content: center;
+                    right: 10px;"
+                id="columnOnePic2Hover" onclick="columOnePic2Hover()"   
+                    >i</p>        
+       </div> 
+    </div>
+    
+
+    
+<!---------------------------Second Column of the content--------------------------------------->
+<div class="columnTwo">
+    <!--card one column Two-->
+    <div class="columnTwoPic1"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+
+    <img src="/DessertsImages/Sweet6PiesTo-Go.png" alt="Sweet6PiesTo-Go"
+         style="background-color:aliceblue;                   
+         width: 100%; height: auto; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Sweet 6 Pies To-Go<br> </p>      
+       <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -13px;">Starts at &#8369 211.00</p>  
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnTwoPic1Hover()"       
+           >i</p>
+    
+  </div>
+
+   <!--card two column two-->
+  <div class="columnTwoPic2"
+       style="height:283px; width: auto;
+              background-color:  #e4163d; color: white;
+              border-radius: 4px; position: relative;">
+
+    <img src="/DessertsImages/UbeCheesePie3PiesTo-go.png" alt="UbeCheesePie3PiesTo-go"
+       style="background-color:aliceblue;
+       margin-left: auto; margin-right: auto;
+       width: 100%; ">
+    <p style="padding-left: 20px;
+             margin-top: 20px;">Ube Cheese Pie 3 Pies To-Go</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -13px;">Starts at &#8369 106.00</p>   
+    <p style="position: absolute; color: orange; top: 8px;
+                  font-size: 20px; width: 15px; height: 15px;
+                  border: 2px solid orange; border-radius: 50%;
+                  display: flex; align-items: center; justify-content: center;
+                  right: 10px;"
+              id="columnOnePic2Hover" onclick="columTwoPic2Hover()"   
+                  >i</p>  
+
+  </div>   
+  </div>
+
+
+
+<!---------------------------third Column of the content--------------------------->
+<div class="columnThree">
+    <!--card one column Three-->
+    <div class="columnThreePic1"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+    <img src="/DessertsImages/ubeCheesePieSolo.png" alt="ubeCheesePieSolo"
+         style="background-color: aliceblue;                   
+         width: 100%; height: auto; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Ube Cheese Pie Solo</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -13px;">Starts at &#8369 38.00</p> 
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnThreePic1Hover()"       
+           >i</p>    
+  </div>
+
+    <!--card two column three-->
+    <div class="columnThreePic2"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+ <img src="/DessertsImages/LargePeachMangoPie3PiesTo-Go.png" alt="LargePeachMangoPie3PiesTo-Go"
+   style="background-color:aliceblue ; width: 100%; height: auto;">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Large Peach Mango Pie 3 <br>
+   Pies To-Go</p>
+   <br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 140.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+    id="columnOnePic1Hover" onclick="columnThreePic2Hover()"       
+    >i</p>            
+
+  </div>
+  </div>
+
+
+
+<!-------------------------fourth column of the content---------------------------->
+<div class="columnFourth">
+    <!--card one column four-->
+   <div class="columnFourthPic1"
+        style="height:283px; width:auto; 
+        background-color:  #e4163d; color: white;
+        margin-right: 10px; border-radius: 4px;                                                           
+        margin-left: 10px; position: relative;">
+  <img src="/DessertsImages/LargePeachMangoPie.png" alt="LargePeachMangoPie" 
+       style="background-color:aliceblue;                   
+       width: 100%; height: auto; ">
+       <p style="padding-left: 20px;
+                 margin-top: 20px;">Large Peach Mango Pie<br></p>          
+          <br>
+       <p style="padding-left: 20px; font-size: 13px;
+                 margin-top: -13px;">Starts at &#8369 48.00</p>  
+       <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="columnOnePic1Hover" onclick="columnEightPic1Hover()"       
+               >i</p>
+  </div>
+ 
+   <!--card two column four-->
+  <div class="columnFourthPic2"
+       style="height:283px; width: auto;
+       background-color:  #e4163d; color: white;
+       border-radius: 4px; position: relative;">
+  <img src="/DessertsImages/3PiesTo-Go.png" alt="3PiesTo-Go"
+  style="background-color:aliceblue;
+  margin-left: auto; margin-right: auto;
+  width: 100%; ">     
+  
+       <p style="padding-left: 20px;
+                 margin-top: 20px;">3 Pies To-Go<br></p>
+       <br>
+       <p style="padding-left: 20px; font-size: 13px;
+                 margin-top: -13px;">Starts at &#8369 106.00</p>
+       <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="columnOnePic1Hover" onclick="columnEightPic2Hover()"       
+               >i</p>
+      </div>  
+   </div>
+
+
+ <!-----------------------fifth column of the content----------------------->
+ <div class="columnFifth">
+    <!--card one column five-->
+   <div class="columnNinePic1"
+        style="height:283px; width:auto; 
+        background-color:  #e4163d; color: white;
+        margin-right: 10px; border-radius: 4px;                                                           
+        margin-left: 10px; position: relative;">
+   <img src="/DessertsImages/PeachMangoPie.png" alt="PeachMangoPie"
+        style="background-color:aliceblue;                   
+        width: 100%; height: auto; ">
+        <p style="padding-left: 20px;
+                  margin-top: 20px;">Peach Mango Pie</p>
+        <br>
+        <p style="padding-left: 20px; font-size: 13px;
+                  margin-top: -13px;">Starts at &#8369 38.00</p>
+        <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="columnOnePic1Hover" onclick="columnNinePic1Hover()"       
+               >i</p>
+      </div>
+
+   <!--card two column fifth-->
+<div class="columnFifthPic2"
+style="height:283px; width: auto;
+background-color:  #e4163d; color: white;
+border-radius: 4px; position: relative;">
+<img src="/DessertsImages/BukoPie.png" alt="BukoPie"
+style="background-color:aliceblue;
+margin-left: auto; margin-right: auto;
+width: 100%; ">
+<p style="padding-left: 20px;
+          margin-top: 20px;">Buko Pie</p>
+<br>
+<p style="padding-left: 20px; font-size: 13px;
+          margin-top: -13px;">Starts at &#8369 45.00</p>
+<p style="position:absolute; font-size: 20px; text-align: center;
+ top: 8px; right: 10px; color: orange; align-items: center;
+ border: 2px solid orange; border-radius: 50px;
+ width: 15px; height: 15px; justify-content: center;
+ margin-left: auto; margin-right: auto; display: flex;"
+    id="columnOnePic1Hover" onclick="columnFifthPic2Hover()"       
+        >i</p>
+</div>  
+</div>
+
+
+<!--------------------------six column of the content----------------->
+<div class="columnSix">
+    <!--card one column six-->
+    <div class="columnsixPic1"
+    style="height:283px; width:auto; 
+            background-color:  #e4163d; color: white;
+            margin-right: 10px; border-radius: 4px;                                                           
+            margin-left: 10px; position: relative;">
+      <img src="/DessertsImages/ChocolateSundaeTwirl.png" alt="ChocolateSundaeTwirl"
+      style="background-color:aliceblue;                   
+      width: 100%; height: auto; ">
+       <p style="padding-left: 20px;
+                 margin-top: 20px;">Chocolate Sundae Twirl</p>
+       <br>
+       <p style="padding-left: 20px; font-size: 13px;
+                 margin-top: -12px">Starts at &#8369 48.00</p>
+        <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="columnOnePic1Hover" onclick="columnSixPic1Hover()"       
+               >i</p>
+    </div>
+</div>
+
+
+ <!-----------------------------Footer Section--------------------------------->
+ <div class="footer" style="margin-top: 10px;">
+    <!--Footer first div section-->
+  <div class="divOne"
+       style="color: white ; padding-top: 40px; padding-left: 30px;">
+
+    <h3 style="margin-bottom: 26px ;">Stay Connected</h3>
+    <div class="icons">
+     <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram" style="font-size:40px ; color: rgb(165, 40, 40); padding-right: 7px;" id="instagram"></i></a>
+     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="font-size: 40px; color: rgb(165, 40, 40); padding-right: 7px;"></i></a>
+     <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-square-twitter" style="font-size: 40px; color:rgb(165, 40, 40)"></i></a>
+    </div>
+  </div>
+   
+   <!--Footer second div section-->
+  <div class="divTwo"
+       style="color: white; padding-left: 30px; margin-top: 30px"
+     >
+    <h3>Stay up-to-date</h3>
+    <p style="margin-top: 12px ;">Don't miss out on exclusive online offers!</p>
+    <h4 style="margin-top: 20px;">Enter your Email</h4>
+  
+    <div class="signUp" style="display: flex; margin-top: -28px;">
+    <p style="border-bottom: 1px solid white;
+       width: 300px; "></p>
+    <h4 style="background-color: orange;
+       padding: 9px 38px; border-radius: 0px 25px 25px 0px; ">SIGN UP</h4>
+    </div>
+  </div>
+
+   <!--Footer third div section-->
+   <div class="divThree" style="color: white; padding-left: 30px;">
+    <h4 style="margin-top: 40px; margin-bottom: 25px;">Useful Links</h4>
+    
+    <div class="links">
+    <p>About Us</p>
+    <p>Stores</p>
+    <p>Privacy Policy</p>
+    <p>T&C</p>
+    <p>Feedback</p>
+    <p>Customer Care</p>
+    <p>Multi-Delivery</p>
+    </div>
+
+   </div>
+
+     <div class="copyright" style="color: white; margin-left: 3
+     0px; font-size: 13px; font-weight: bold; display: block; text-align: center;">
+      <p style="margin-top: 15px;">Copyright &copy; 2019 Joeybee. All Rights Reserved.</p>
+     </div>
+
+
+  </div>
+
+
+
+
+    </div>
+
+
+<script src="/Desserts.js"></script>
+</body>
+</html>

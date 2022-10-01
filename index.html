@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Joey.css">
+    <link rel="stylesheet" href="menu.css">
+    <script src="https://kit.fontawesome.com/6c578579b6.js" crossorigin="anonymous"></script>
+    
+    <title >JoeyBee</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+</head>
+<body onload="myFunction()">
+    
+    <!--loading animation starts to roll-->
+    <div id="loader"></div>   
+
+
+    <!--main container and bottom up animation-->
+    <div class="main-container" id="myDiv" style="display: none ;" >
+   
+    <!-----------------Hidden left side navigation bar-------------------->
+
+         <div class="leftSideNav" id="navId">
+             <a href="#" id="btnClose" onclick="navClose()">&times;</a>
+             <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-house" style="margin-right: 15px;"></i> Home</a>
+             <a href="https://goo.gl/maps/eRH3zBimoB4CzRw5A" target="_blank"><i class="fa-solid fa-shop" style="margin-right: 15px;"></i> Stores</a>
+             <a href="#" onclick="menu()"><i class="fa-solid fa-utensils"  style="margin-right: 15px;"></i> Menu</a>
+                
+             <!--Dropdown div use to hide and show the menu list-->
+                         <div class="dropdown" id="myMenu">
+             
+                            <!--list item shows the menu list-->
+                                <div id="list-itemOne">
+                                    <a href="http://127.0.0.1:5500/bestSeller.html">Best Sellers</a>
+                                    <a href="http://127.0.0.1:5500/newProducts.html">New Products</a>
+                                    <a href="http://127.0.0.1:5500/familyMeals.html">Family Meals</a>
+                                    <a href="http://127.0.0.1:5500/breakFastJoys.html">Breakfast Joys</a>
+                                    <a href="#">Breakfast</a>
+                                    <a href="#">chickenJoy</a>
+                                    <a href="#">Burgers</a>
+                                    <a href="#">Jolly Spaghetti</a>
+                                    <a href="#">Burger Steak</a>
+                                    <a href="#">Super Meals</a>
+                                    <a href="#">Chicken Sandwich</a>
+                                    <a href="#">Jolly Hotdog & Pies</a>
+                                    <a href="#">Palabok</a>
+                                    <a href="#">Fries and Sides</a>
+                                    <a href="#">Desserts</a>
+                                    <a href="#">Beverages</a>
+                                    <a href="#">Jolly Kiddie Meal</a>
+                                </div>
+
+                       </div>               
+            
+             <a href="#"><i class="fa-solid fa-bell-concierge" style="margin-right: 15px;"></i>About</a>
+         </div> 
+     
+         
+
+   <!-----------------------header page----------------------------->
+      <div class="header" style="max-width: 100%" id="header">   
+              
+
+       <span style="font-size:24px; 
+                    color:white;
+                    margin-left: 15px;
+                    cursor: pointer;"
+             onclick="navOpen()"       
+                     >&#9776</span>
+
+      <img src="/images/sponge2.png" style="height: 3rem; border-radius: 5px; cursor: pointer;" alt="spongee">
+        
+     <div class="sign-in" style="display: flex;" onclick="comeIn()">
+            <h2 style="margin-right: 12px;" class="sign-in" id="sign">Sign in</h2>
+            <img src="/images/pictureFour.jpg" style="height: 2.5rem; border-radius: 5px;" alt="">
+     </div>   
+
+      </div>         
+
+      <!--body of the page -->
+      <div class="body">       
+ 
+             <!--------start wrap up with ellipseClass-->   
+                 <p class="beginning" style="height: 100px;">Begins</p>                  
+                 <p class="ellipse">START NEW ORDER</p>
+                                 
+              <!-------peach mango picture-->              
+             
+              <img src="/images/mangoP.jpg" class="peachMango"  alt="peachMangoPicture"> 
+                 <div class="ellipse2">START NEW ORDER</div>
+            
+                 <!--------best seller picture-->
+            
+             <img src="/images/bestSeller.jpg" class="bestSeller" alt="smallPicture">
+            
+             <!--------new Products picture-->
+           
+             <img src="/images/newProducts.jpg" class="newProducts" alt="newProducts"> 
+             
+             <!-------Family Meals picture-->
+          
+             <img src="/images/familyMeals.jpg" class="familyMeals" alt="familyMeals">
+          
+             <!-------chicken joy picture-->
+           
+             <img src="/images/chickenJoy.jpg"  class="chickenJoy" alt="chickenJoey">
+         
+             <!----------burgers picture-->
+            
+             <img src="/images/burgers.jpg" class="burgers" alt="burgersPicture">
+                  
+
+             <div class="pictureDoublePicture">
+             <!----------bestSeller and new Products-->
+                <div class="firstColumn" style="display: flex; height: 250px;">                  
+                     <img src="/images/bestSeller.jpg" class="bestSeller2" style="margin-right: 20px; margin-bottom: 15px; width: 700px;" alt="bestSeller2">
+                     <img src="/images/newProducts.jpg" class="newProducts2" style="margin-bottom: 15px; width: 500px;" alt="newProducts2">
+                </div>
+
+                <!---------second column-->
+                <div class="secondColumn" style="display: flex; height: 250px; margin-bottom: 15px;">
+                    <img src="/images/familyMeals.jpg" class="familyMeals2" style="margin-right: 20px ; width: 600px;" alt="familyMeals2">
+                    <img src="/images/chickenJoy.jpg" class="chickenJoy2" style="margin-right: 20px; width: 600px;" alt="chickenJoy2">
+                    <img src="/images/burgers.jpg" class="burgers2" style="margin-right: 20px; width: 600px;" alt="burgers2">
+                </div>               
+
+             </div>
+                <!-----------third column----------->
+            <div class="doubleDiv">
+                <div class="thirdColumn">
+                    <div class="spongee">
+                        <img src="/images/spongeDelivery.jpg" class="spongeDelivery" alt="">
+                    </div>
+                     <p class="vfmenu">
+                        View Full Menu
+                     </p>
+
+                </div>
+                <!------------fourth Column------------>
+                <div class="fourthColumn">
+                    <p class="pix"><i class="fa-solid fa-bed-pulse"></i></p>
+
+                <div class="rightSideParagraph">
+                    <p class="deserveCare">You Deserve Extra Care!</p>
+                    <p class="jollibeeSteps">Jollibee is taking steps to keep you and
+                        our team members safe.
+                    </p>
+                </div>
+                </div>
+            </div>
+                <!---------last Column------------->
+                <div class="footer">
+                    <div class="floatRight">
+                    <p class="firstPara">Stay Connected</p>
+                    <p class="icons"><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram" id="instagram" style="font-size: 45px ; color: rgb(167, 31, 31)"></i></a>
+                                     <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" id="facebook" style="font-size: 45px; color: blue;"></i></a>
+                                     <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter-square" id="twitter" style="font-size: 45px;"></i></a>
+                    </p>
+                   </div>
+
+                    <p class="uptodate">Stay up-to-date</p>
+                    <p class="dontmiss">Don't miss out on exclusive online offers!</p>
+                    <div class="email">
+                         <p class="enterEmail">Enter your Email</p>   <button class="btn" onclick="window.open('http://127.0.0.1:5500/signUp.html')">SIGN UP</button>
+                         <hr class="line">
+                    </div>
+                    <br>
+
+                     <p class="linksOne">Useful Links</p>
+
+                <div class="links">
+                        <p> <span class="aboutUs" onclick="aboutUs()">About Us</span> <span class="stores" onclick="stores()">Stores</span> <span class="privacy" onclick="privacy()">Privacy Policy</span> <span class="tandc" onclick="tandc()">T&C</span> <span class="feedback" onclick="feedBack()">Feedback</span>
+                         <span class="customer" onclick="customer()">Customer Care</span> <span class="multi" onclick="multi()">Multi-Delivery</span> <span class="book" onclick="book()">Book a Jollibee Virtual Party</span>
+                        </p>
+                     </div>
+                       
+                     <div class="copyRight">
+                         Copyright &copy; 2022 Joey Sayadi. All Rights Reserved.
+                  </div>
+             </div>
+ 
+ <!---------------------------------Footer two area -------------------------------------->            
+          
+ <div class="footer2">
+                <div class="rightGrid">
+                <p class="firstPara">Stay Connected</p>
+                <p class="icons"><a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="fa-brands fa-instagram" id="instagram" style="font-size: 45px ; color: rgb(167, 31, 31)"></i></a>
+                                 <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook" id="facebook" style="font-size: 45px; color: blue;"></i></a>
+                                 <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter-square" id="twitter" style="font-size: 45px;"></i></a>
+                </p>
+            </div>
+
+
+                <div class="footerBaseGrid">
+                    Copyright &copy; 2022 Joey Sayadi. All Rights Reserved.
+               </div>
+            
+          
+                <div class="menuGrid">
+                <p class="Stay">Stay up-to-date</p>
+                <p class="dontmiss">Don't miss out on exclusive online offers!</p>
+                </div>
+                <div class="mainGrid">
+                     <p class="enterEmail">Enter your Email</p>   <button class="btn" onclick="signUp()">SIGN UP</button>
+                     <P class="line">____________________________</P>
+                </div>
+
+                 <p class="links">Useful Links</p>
+
+            <div class="headerGrid">
+                    <p> <span class="aboutUs" onclick="aboutUs()">About Us</span> <span class="stores" onclick="stores()">Stores</span> <span class="privacy" onclick="privacy()">Privacy Policy</span> <span class="tandc" onclick="tandc()">T&C</span> <span class="feedback" onclick="feedBack()">Feedback</span>
+                     <span class="customer" onclick="customer()">Customer Care</span> <span class="multi" onclick="multi()">Multi-Delivery</span> <span class="book" onclick="book()">Book a Jollibee Virtual Party</span>
+                    </p>
+                 </div>
+                   
+                
+         </div>
+       </div>
+    </div>
+
+    <script src="Joey.js"></script>
+    <script src="/menu.js"></script>
+
+</body>
+</html>

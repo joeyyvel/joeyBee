@@ -1,0 +1,1200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;    
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*--------------------------loading animation----------------------------*/
+
+#loader{
+    position: absolute;
+    border: 16px solid gray;
+    border-radius: 50%;
+    border-top: 16px solid red;
+    border-bottom: 16px solid yellow;
+    height: 180px;
+    width: 180px;
+    top: 50%;
+    left: 50%;
+    margin: -76px 0 0 -76px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+      
+}
+
+@-webkit-keyframes spin{
+    0%{
+        -webkit-transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+.main-container{
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 3s;
+    animation-name: animatebottom;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes animatebottom{
+    from{
+        bottom: -500px;
+        opacity: 0;
+    }
+    to{
+        bottom: 0;
+        opacity: 1;
+    }
+    
+}
+
+
+@keyframes animatebottom{
+     from{
+        bottom: -500px;
+        opacity: 0;
+     }
+     to{
+        bottom: 0;
+        opacity: 1;
+     }
+
+}
+
+
+/*-------------------------------end of loading animataion-------------------------*/
+
+
+@media (max-width: 1350px){
+    .header{
+        background-color: lime;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        height: 90px;
+        width: 1100px;
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .bestSeller{
+        display: none;
+    }
+    .newProducts{
+        display: none;
+    }
+    .familyMeals{
+        display: none;
+    }
+    .chickenJoy{
+        display: none;
+    }
+    .burgers{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .doubleDiv{
+        border: 7px solid rgb(218, 240, 11);
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .thirdColumn{
+        border: 3px solid blue;
+        display: flex;       
+        justify-content: center;
+        align-items: center;
+        justify-content:space-evenly;
+        width: 600px;
+        border-radius: 50px;     
+    }
+    .spongeDelivery{
+        height: 80px;       
+    }
+    .vfmenu{
+        color: red;
+        font-size: 23px;
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    }
+    .fourthColumn{
+        border: 3px solid greenyellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 600px;
+        border-radius: 50px;
+        justify-content: space-evenly;
+       
+    }
+    .pix{
+        font-size: 60px;
+        color: red;
+    }
+    .deserveCare{
+        font-size: 20px;
+        color: red;
+        margin-bottom: 10px;
+    }
+    .jollibeeSteps{
+        font-size: 14px;
+        font-weight: bolder;
+    }
+
+    .headerGrid{
+        grid-area: headerGrid;
+    }
+    .menuGrid{
+        grid-area: menuGrid;
+    }
+    .mainGrid{
+        grid-area: mainGrid;
+    }
+    .rightGrid{
+        grid-area: rightGrid ;
+    }
+    .footerBaseGrid{
+        grid-area: footerBaseGrid;
+    }
+
+    .footer2{
+        background-color: red;        
+        display: grid;
+        grid-template-areas: 'headerGrid headerGrid headerGrid headerGrid headerGrid headerGrid' 
+                             'menuGrid mainGrid mainGrid mainGrid rightGrid rightGrid'
+                             'footerBaseGrid footerBaseGrid footerBaseGrid footerBaseGrid footerBaseGrid footerBaseGrid'
+        ;
+        gap: 10px;
+        padding: 10px;
+    }
+    .footer2 > div{
+        background-color: rgb(176, 39, 244);
+        padding: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .links{
+        display: none;
+    }
+
+}
+
+@media (max-width: 1050px){
+   
+    .header{
+        background-color: rgb(247, 63, 226);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;      
+        height: 90px;
+        width: 1023px;
+        position: fixed;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+  /* -------------------------------left side navbar -------------------------------*/  
+    .leftSideNav{
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        background-color: #111;
+        position: fixed;
+        z-index: 1;
+        transition: 0.5s;
+        padding-top: 40px;
+
+    }
+    .leftSideNav a{
+        font-size: 30px;
+        font-weight: bolder;
+        color: orange;
+        text-decoration: none;
+        margin-left: 40px;
+        display: block;
+    }
+    .leftSideNav a:hover{
+        color: red;
+    
+    }
+    .leftSideNav #btnClose{
+        margin-left: 200px;
+        color: aqua;
+        font-size: 45px;
+    }
+    .leftSideNav #btnClose:hover{
+        color: rgb(38, 0, 255);
+    }
+   
+   /*-------------------------------end of left side navbar----------------------------*/
+   
+   
+   .sign-in{
+        color: white;
+        font-size: 15px;
+        align-items: center;
+        margin-right: 20px;        
+    }
+    #sign{
+        padding-right: 20px;
+    }
+    .ellipse{
+        display: none;
+    }
+    .ellipse2{
+        display: none;
+    }
+   
+    .peachMango{
+        display: flex; 
+        padding-left: 10px;
+        padding-right: 10px;
+        justify-content: center;       
+        width: 1023px;
+        margin-bottom: 15px;
+         
+
+
+
+    }
+    .bestSeller{
+        display: none;
+    }
+    .newProducts{
+        display: none;
+    }
+    .familyMeals{
+        display: none;
+    }
+    .chickenJoy{
+        display: none;
+    }
+    .burgers{
+        display: none;
+    }
+    .firstColumn{
+      width:100%;     
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      overflow-y: hidden;      
+    }
+    .firstColumn::-webkit-scrollbar{
+        display: none;
+    }
+    .secondColumn{
+      width: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px;
+      overflow-x: hidden;
+
+    }   
+    .secondColumn::-webkit-scrollbar{
+        display: none;
+    }
+    .thirdColumn{       
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 50px;
+        margin-left: auto;
+        margin-right: 20px;
+        margin-bottom: 10px;
+        justify-content: space-evenly;      
+    }
+    .spongeDelivery{
+        height: 85px;
+        width: 75px;       
+    }
+    .vfmenu{
+       color:#e4163d;
+       font-size: 20px;
+       font-weight: bolder;
+    }
+    .fourthColumn{
+        border: 5px solid red;
+        display: flex;
+        height: 105px;
+        justify-content: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;        
+    }
+    .pix{
+        color: red;
+        padding: 20px 40px;
+        font-size: 40px;
+    }
+    .rightSideParagraph{
+       
+        padding: 20px 40px;
+    }
+    .deserveCare{
+        color: red;
+        font-weight: bolder;
+        margin-bottom: 15px;
+        font-size: 16px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    .doubleDiv{ 
+        background-color: gold;     
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        justify-self: auto;
+        border: none;       
+        margin-left: auto;
+        margin-right: auto;
+        object-fit: fill;       
+    }
+
+    .footer{
+        display: flow-root;
+        background-color: #e4163d;
+        width: 1023px;
+        height: 500px;
+        padding-left: 20px;
+    }
+    .footer2{
+       display: none;
+    }    
+    .links{
+        display: flow-root;
+    }
+    .firstPara{
+        color: white;
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+    .icons{
+        margin-left: 15px;
+        
+    }
+    .fa-facebook{
+        margin-left: 15px;
+        background-color: white;
+        border-radius: 50px;
+    }
+    .fa-twitter-square{
+        margin-left: 15px;
+        background-color: white;
+        border-radius: 6px;
+        height: 35px;
+        padding-top: -5;
+        margin-bottom: 30px;
+    }
+    .uptodate{
+        color: white;
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+    .dontmiss{
+        color: white;
+        font-size: 15px;
+        position:absolute;
+        margin-bottom: 200px;        
+    }
+    
+   
+    .linksOne{
+        color: white;
+        font-weight: bolder;
+        margin-bottom: 35px;
+        
+
+    }
+    .links{
+        color: white;
+        font-size: 15px;
+        display: flex;
+        justify-content:space-between;
+        margin-bottom: 50px ;
+    }
+     .email{
+        margin-bottom: 60px;
+        
+     }
+     .dontmiss{
+       
+        position: absolute;
+        margin-top: 55px;
+
+     }
+     .line{
+        border: 1px solid white;
+        width: 195px;
+        margin-left: 293px;
+        margin-top: -2px;
+     }
+     .btn{
+        background-color: orange;
+        margin-left: 100px;
+        padding: 13px 30px;
+        border: orange;
+        border-radius: 0 15px 15px 0;
+        color: white;
+        font-weight: bold;
+        
+     }
+     .enterEmail{
+        color: white;
+        position: sticky;
+        top: 30px;              
+        font-size: 12px;
+        font-weight: bold;
+        margin-left: 290px; 
+        display: inline;
+                
+
+     }
+
+    .copyRight{
+        font-size: 13px;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+ 
+
+@media (max-width: 960px) {
+    .header{
+        background-color: yellow;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        height: 70px;
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed;
+    }
+    .footer{
+        width: 100%;
+       
+    }
+    .leftSideNav{
+        height: 100%;
+        width: 0;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        position: fixed;
+        z-index: 1;
+        padding-top: 60px;
+    }
+    .leftSideNav a{
+        font-size: 35px;
+        color: orange;
+        text-decoration: none;
+        padding: 8px 8px 8px 32px;
+        margin-left: 10px;
+    }
+    .leftSideNav a:hover{
+        color: red;
+    }
+    .leftSideNav #btnClose:hover{
+        font-size: 55px;
+        color: greenyellow;
+    
+    }
+    #btnClose{
+        margin-left: 190px;
+        
+    }
+
+    
+  
+   
+    .sign-in{
+        font-size: 16px;
+        align-items: center;
+        color: white;
+        cursor: pointer;
+    }
+    .ellipse{
+        display: none;
+    }
+
+    .peachMango{
+        width: 100%;        
+        max-height: 7cm;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;        
+        margin-top: -27px;
+        position: relative;
+        z-index: -1;
+        align-items: center;   
+             
+    }
+   
+    .ellipse2{
+        margin-left: 250px;
+        width: 340px;
+        height: 47px;
+        background-color: rgb(235, 121, 20);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;       
+        margin-top: -8px;        
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        border-radius: 25px;
+        font-size: 14px;
+        font-weight: bolder;
+        color: white;
+        position: relative;
+        z-index: -1;
+       
+    }
+    
+    .bestSeller{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+    .newProducts{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+    .familyMeals{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+    .chickenJoy{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+    .burgers{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 15px;
+        padding: 0 20px;
+    }
+    .pictureDoublePicture{
+        display: none;
+    }
+    .thirdColumn{
+        border: 4.5px solid red;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        height: 80px;
+        justify-content: center;
+        border-radius: 50px;      
+        margin: 0 20px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+   
+    .spongeDelivery{
+        height: 90px;
+        width: 80px;
+        border-radius: 6px;
+    }
+    .vfmenu{
+        color: #e4163d;
+        font-size: 15px;
+        font-weight: bolder;
+        padding-left: 30px; 
+
+    }
+    .fourthColumn{
+        border: 7px solid #e4163d;
+        height: 230px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+        margin-bottom: 40px;
+        width: 100%;
+        margin-left: auto;
+        margin-left: auto;
+       
+    }
+    .doubleDiv{
+        display: block;
+        border: none;
+    }
+    .pix{
+        font-size: 75px;
+        color: #e4163d;
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+    .deserveCare{
+        font-size: 32px;
+        font-weight: bolder;
+        color: #e4163d;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .jollibeeSteps{
+        font-size: 30px;
+        font-weight: bolder;
+    }
+   
+    
+    .footer2{
+        display: none;
+    }
+    .firstPara{       
+        color: white;
+        padding-top: 40px;
+        margin-bottom: 25px;
+        
+    }
+    .icons{
+        margin-bottom: 25px;
+
+    }
+    .fa-brands{
+        margin-left: 15px;
+    }
+   
+    #facebook{
+       background: white;
+        border-radius: 50px;
+        background-size: 1rem;
+           
+    }
+    #twitter{
+       background-color: white;
+       border-radius: 6px;
+       height: 35px;      
+           
+    }
+    .uptodate{
+       position: sticky;
+        
+       color: white;
+       margin-bottom: -6px; 
+    }
+    .dontmiss{
+       
+       color: white;
+       font-size: 13px;
+       margin-bottom: -70px;
+       position: sticky;
+       padding-bottom: 40px;
+    }
+    .enterEmail{
+      position: sticky;     
+      margin-bottom: -28px;
+      margin-left: 300px;
+      
+    }
+    .line{
+        border: 1px solid white;
+        margin-top: -2px;
+        width: 200px;
+        margin-left: 300px;
+       
+        
+    }
+    .btn{
+        margin-left: 500px;
+        padding: 10px 40px;
+        background-color: orange;
+        cursor: pointer;        
+        color: white;
+        font-weight: bolder;
+        border-radius: 0 25px 25px 0;
+        border: orange;   
+       
+    }
+    .linksOne{       
+        position: relative;      
+        top: 20px;
+        
+    }
+    .links{       
+        margin-top: 50px;
+        color: white;
+    }
+    .aboutUs{       
+        font-size: 13px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .aboutUs:hover{
+       color: orange;
+    }
+    .stores{
+        font-size: 13px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .stores:hover{
+       color: orange;
+    }
+    .privacy{
+        font-size: 13px;
+        margin-right: 13px;
+        cursor: pointer;
+    }
+    .privacy:hover{
+        color: orange;
+    }
+    .tandc{
+        font-size: 13px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .tandc:hover{
+       color: orange;
+    }
+    .feedback{
+        font-size: 13px;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+    .feedback:hover{
+        color: orange;
+    }
+    .customer{
+        font-size: 13px;
+        margin-right: 13px;
+        cursor: pointer;
+    }
+    .customer:hover{
+        color: orange;
+    }
+    .multi{
+        font-size: 13px;
+        margin-right: 13px;
+        cursor: pointer;
+    }
+    .multi:hover{
+        color: orange;
+    }
+    .book{
+        font-size: 13px;
+        margin-right: 13px;
+        cursor: pointer;
+    }
+    .book:hover{
+        color: orange;
+    }
+    .copyRight{
+        font-size: 13px;
+        color: white;
+        margin-top: 40px;
+        margin-left: 120px;
+    }
+   
+}
+
+
+@media screen and (max-width: 635px){
+   
+    .header{
+        background-color: rgb(225, 31, 31);
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+        height: 70px;       
+        width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+        position: fixed;     
+       
+    }
+    .leftSideNav{
+        height: 100%;
+        width: 0px;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        background-color: #111;
+        transition: 0.5s;
+        z-index: 1;
+        position: fixed;
+        padding-top: 60px;
+    }
+    .leftSideNav a{
+        font-size: 17px;
+        color:gold;
+        text-decoration: none;
+        padding: 8px 8px 8px 32px;
+        display: block;
+    }
+    .leftSideNav a:hover{
+        color: red;
+    }
+    .leftSideNav #btnClose{
+        color: blue;
+        font-size: 45px;
+        margin-left: 100px;
+    }
+    .leftSideNav #btnClose:hover{
+        font-size: 50px;
+        color: deeppink;
+    }
+
+
+   .sign-in{
+        font-size: 12px;
+        color: white;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .body{
+        background-color: white;
+    }
+
+    .ellipse{
+        width: 350px;
+        height: 45px;
+        background-color: rgb(238, 159, 14);
+        border-radius: 30px;
+        color: white;
+        font-size: small;
+        font-weight: bolder;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -35px;
+        margin-bottom: 15px;       
+       
+    }
+
+    .peachMango{
+        display: none;
+    }
+    .ellipse2{
+        display: none;
+    }
+
+    .bestSeller{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px;
+    }
+
+    .newProducts{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .familyMeals{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .chickenJoy{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+
+    .burgers{
+        width: 100%;
+        display: inline-block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        padding-right: 10px;
+        
+    }
+
+    .picture{
+        display: none;
+    }
+
+    .thirdColumn{
+        width: 100%; 
+        border: 4.5px solid red;
+    }
+
+    .spongeDelivery{
+         height: 80px;
+    }
+
+    .vfmenu{
+        padding-left: 1px;
+         font-size: 16px;
+    }
+
+    .fourthColumn{
+        display: flex;
+        height: 150px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;     
+       
+    }
+    .doubleDiv{
+       border: none;
+       background-color: white;
+    }
+    .pix{
+        font-size: 60px;
+        color: #e4163d;
+    }
+
+    .deserveCare{
+       font-size: 20px;
+    }
+
+    .jollibeeSteps{
+       font-size: 15px;
+    }
+
+    .footer{
+       
+        background-color: #e4163d;       
+        color: white;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .firstPara{
+        font-weight: bolder;
+        margin-bottom: 20px;
+    }
+
+    .icons{
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .uptodate{
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .dontmiss{       
+        font-size: 13px;        
+       
+        position: relative;
+        top: -50px;
+              
+    }
+
+    .enterEmail{     
+        position: sticky;      
+        margin-left: 19px;
+        margin-bottom: -28px;       
+    }    
+    
+    .btn{
+        border-radius: 0 15px 15px 0 ;
+        border-right: 25px;
+        padding: 12px;       
+        width: 140px;
+        user-select: none;
+        cursor: pointer; 
+        margin-left: 270px;
+        display: flex;
+        justify-content: center;
+        border: orange;
+        background-color: orange;
+        color: white;
+        font-weight: bolder;
+                      
+    }
+
+    .btn:hover{
+        background-color: rgb(0, 255, 17);
+    }
+
+    .line{        
+      border: 1px solid white;
+      width: 250px;
+      position: relative;
+      margin-left:20px;      
+      margin-bottom: 25px;
+       
+    }
+
+    .linksOne{
+      
+       top: -5px;
+    }
+
+    .links{
+       margin-top: 20px;      
+       position: relative;
+       margin-top: -20px;
+    }
+
+    .aboutUs{
+        font-size: 14px;
+        padding: 15px 13px 15px 0;
+        cursor: pointer;
+    }
+
+    .aboutUs:hover{
+        color: orange;
+    }
+
+    .stores{
+        font-size: 14px;
+        padding: 15px 15px 15px 0;
+        cursor: pointer;
+    }
+
+    .stores:hover{
+        color: orange;
+    }
+
+    .privacy{
+        font-size: 14px;
+        padding: 15px 13px 15px 0;
+        cursor: pointer;
+    }
+
+    .privacy:hover{
+        color: orange;
+    }
+
+    .tandc{
+        font-size: 14px;
+        padding: 15px 13px 15px 0;
+        cursor: pointer;
+    }
+
+    .tandc:hover{
+        color: orange;
+    }
+
+    .feedback{
+        font-size: 14px;
+        padding: 15px 13px 15px 0px;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .feedback:hover{
+        color: orange;
+    }
+
+    .customer{
+        font-size: 14px;
+        padding: 15px 13px 15px 0;
+        cursor: pointer;
+    }    
+
+    .customer:hover{
+        color: orange;   
+    }
+
+    .multi{
+        font-size: 14px;
+        padding: 15px 8px 15px 0;
+        cursor: pointer;
+    }
+
+    .multi:hover{
+        color: orange;
+    }
+
+    .book{
+        font-size: 14px;
+        padding: 15px 8px 15px 0;
+        cursor: pointer;
+    }
+
+    .book:hover{
+        color: orange;
+    }
+
+    .copyRight{
+       
+        font-size: 11px;
+        font-weight: bold;
+        bottom: 28px;
+        position: relative;
+        right: 80px;
+        
+       
+    }
+    .footer{
+        display: flow-root;
+        width: 100%;
+        background-color: #e4163d;
+        height: 100%;
+        
+    }  
+    .footer2{
+        display: none;
+    }    
+  }
+}

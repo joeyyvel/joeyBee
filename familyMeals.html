@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Meals</title>
+    <script src="https://kit.fontawesome.com/6c578579b6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/familyMealsImages/joey30pixel.png">
+    <link rel="stylesheet" href="familyMeals.css">
+</head>
+<body onload="myFunction()">
+    
+   <!---------------------------loading animation starts to roll------------------>
+   <div id="loader"></div>   
+
+    <!-----------------header navigation var------------------->
+    <div class="header">
+        <div class="burgerMenu" style="user-select: none;" onclick="navOpen()">
+          &#9776
+        </div>
+  
+        <div class="spongePhoto">
+          <img src="/images/sponge2.png" class="spongePhoto2" alt="">
+        </div>
+  
+        <div class="sign-In">
+          <p id="signIn">Sign In</p>
+          <img src="/images/pictureFour.jpg" class="sponge1" alt="">
+  
+        </div>  
+      </div>
+  
+    <!-------------main container and bottom up animation--------------------------------------->
+    <div class="main-container" id="myDiv" style="display: none ;" >
+
+
+<!-------------------------------------Hidden left side navigation bar-------------------------->
+<div class="leftSideNav" id="navId" style="z-index: 2;">
+    <a href="#" id="btnClose" onclick="navClose()">&times;</a>
+    <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-house" style="margin-right: 15px;"></i> Home</a>
+    <a href="https://goo.gl/maps/eRH3zBimoB4CzRw5A" target="_blank"><i class="fa-solid fa-shop" style="margin-right: 15px;"></i> Stores</a>
+    <a href="#" onclick="menu()"><i class="fa-solid fa-utensils"  style="margin-right: 15px;"></i> Menu</a>
+       
+    <!--Dropdown div use to hide and show the menu list-->
+                <div class="dropdown" id="myMenu">
+    
+                   <!--list item shows the menu list-->
+                       <div id="list-itemOne">
+                            <a href="http://127.0.0.1:5500/menuPage.html">Menu Page</a>
+                           <a href="http://127.0.0.1:5500/bestSeller.html">Best Sellers</a>
+                           <a href="http://127.0.0.1:5500/newProducts.html">New Products</a>
+                           <a href="http://127.0.0.1:5500/familyMeals.html">Family Meals</a>
+                           <a href="http://127.0.0.1:5500/breakFastJoys.html">Breakfast Joys</a>
+                           <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+                           <a href="http://127.0.0.1:5500/Chickenjoy.html">chickenJoy</a>
+                           <a href="http://127.0.0.1:5500/Burgers.html">Burgers</a>
+                           <a href="http://127.0.0.1:5500/JollySpaghetti.html">Jolly Spaghetti</a>
+                           <a href="http://127.0.0.1:5500/burgerSteak.html">Burger Steak</a>
+                           <a href="http://127.0.0.1:5500/superMeals.html">Super Meals</a>
+                           <a href="http://127.0.0.1:5500/chickenSandwich.html">Chicken Sandwich</a>
+                           <a href="http://127.0.0.1:5500/jollyHotdog&Pies.html">Jolly Hotdog & Pies</a>
+                           <a href="http://127.0.0.1:5500/Palabok.html">Palabok</a>
+                           <a href="http://127.0.0.1:5500/Fries&Sides.html">Fries and Sides</a>
+                           <a href="http://127.0.0.1:5500/Desserts.html">Desserts</a>
+                           <a href="http://127.0.0.1:5500/Beverages.html">Beverages</a>
+                           <a href="http://127.0.0.1:5500/JollyKiddieMeal.html">Jolly Kiddie Meal</a>
+                       </div>
+
+              </div>               
+   
+    <a href="#"><i class="fa-solid fa-bell-concierge" style="margin-right: 15px;"></i>About</a>
+</div> 
+
+<!-----------------------------------------End of left navbar------------------------------------->
+
+           <!--Best Seller Bar-->
+    <div class="sellerBar">
+        <h3 id="arrow">&#8592</h3>
+        <h3 id="bestTitle">Family Meals</h3>
+    </div>
+
+   <!--------------------------------First Column of the content--------------------------------> 
+   <div class="columnOne">
+    <!--Card One column One-->
+  <div class="columnOnePic1"
+       style="height:283px; width:auto; 
+              background-color:  #e4163d; color: white;
+              margin-right: 10px; border-radius: 4px;                                                           
+              margin-left: 10px; position: relative;">
+                     
+  <img src="/bestSellerImages/8pcChickenjoy.png" alt="8pcChickenjoy" 
+       style="background-color:aliceblue;                   
+              width: 100%; height: auto; ">
+   
+       <h4 style="padding-left:20px;
+             margin-top: 25px;">8-pc. Chickenjoy Bucket w/ <br>
+     Jolly Spaghetti Family Pan </h4> 
+     <br>
+   <p style="padding-left: 20px ; font-size: 13px;
+             margin-top: -12px;">Starts at &#8369 710.00</p> 
+   <p style="position:absolute; font-size: 20px; text-align: center;
+             top: 8px; right: 10px; color: orange; align-items: center;
+             border: 2px solid orange; border-radius: 50px;
+             width: 15px; height: 15px; justify-content: center;
+             margin-left: auto; margin-right: auto; display: flex;cursor: pointer;"
+      id="8pcChickenjoy"        
+             >i</p>
+  
+              <!----------------------the modal-------------------->
+        <div class="mainModal-container" id="modal">        
+        
+          <!-------modal content 8pc chicken joy bucket---------------->
+                 <div class="modal-content" id="modContent">   
+             
+             <div class="modal-header" style="display: flex; justify-content: center;
+                       align-items: center;">           
+                  
+                   <h2 style="color: black; padding: 20px;"
+                    > 8 - pc. Chickenjoy Bucket w/ <br>
+                    Jolly Spaghetti Family Pan </h2>        
+                   <span class="close">&times;</span>        
+                 </div> 
+        
+                 <div id="pictureAndParagraph" 
+                      style=" height: 100px;
+                             padding: 20px;">
+                 <img src="/bestSellerImages/8pcChickenjoy.png" alt="8pcChickenjoy"
+                     style="width: 135px; margin-left: -10px;">                 
+                  <p id="myPara" style="color: black">Jollibee Meal Time Bundle <br>
+                     brings you your favorite <br>
+                     crispylicious, juicylicious <br>
+                     Chickenjoy with the <br>
+                     meatiest, cheesiest, sweet- <br>
+                     sarap Jolly Spaghetti!
+                 </p>        
+               </div>        
+                  <div style="display: flex; margin-top: 30px">
+                   <button style="background-color: rgb(185, 49, 49); width: 160px;
+                           border: none; padding: 9px; color: white;
+                           font-size: 20px; border-radius: 40px;
+                           margin:auto; cursor: pointer;" class="ok">OK!</button>
+                 </div>        
+               </div>                
+           </div> 
+    <!---------------------end of modal chickenjoy bucket---------->  
+
+
+</div> 
+
+<!--card two column one-->
+  <div class="columnOnePic2"
+   style="height:283px; width: auto;
+          background-color:  #e4163d; color: white;
+          border-radius: 4px; position: relative;" >
+  <img src="/familyMealsImages/6pcChickenWithPalabok.png" alt="6pcChickenjoy"
+       style="background-color:aliceblue;
+              margin-left: auto; margin-right: auto;
+              width: 100%; ">
+
+      <h4 style="padding-left:20px;
+           margin-top: 20px;">6-pc. Chickenjoy with Palabok <br>
+      Family Pan</h4>
+      <br>
+      <p style="padding-left:20px ; font-size: 13px;
+                margin-top: -12px;">Starts at &#8369 740.00</p>
+      <p style="position: absolute; color: orange; top: 8px;
+                font-size: 20px; width: 15px; height: 15px;
+                border: 2px solid orange; border-radius: 50%;
+                display: flex; align-items: center; justify-content: center;
+                right: 10px; user-select: none;"
+            id="6pcChickenjoyWithPalabok"   
+                >i</p>               
+      
+     <!----------------------the modal-------------------->
+        <div class="mainModal-container" id="modal2">        
+        
+    <!-------modal content 8pc chicken joy bucket---------------->
+                 <div class="modal-content" id="modContent">   
+             
+             <div class="modal-header" style="display: flex; justify-content: center;
+                       align-items: center;">                
+                   <h2 style="color: black; padding: 20px;"
+                    > 6 - pc. Chicken with Palabok <br>
+                              Family Pan </h2>        
+                   <span class="close2">&times;</span>        
+                 </div> 
+        
+                 <div id="pictureAndParagraph" 
+                      style=" height: 100px;
+                             padding: 20px;">
+                 <img src="/familyMealsImages/6pcChickenWithPalabok.png" alt="8pcChickenjoy"
+                     style="width: 135px; margin-left: -10px;"
+                 >
+                  <p id="myPara" style="color: black">6-pcs. of the philippines' <br>
+                     best-tasting crispylicious, <br>
+                     juicylicious Chickenjoy <br>
+                     paired with your classic <br>
+                     favorite saucy-sarap <br>
+                     Palabok Family Pan with <br>
+                     tasty toppings!
+                 </p>        
+               </div>
+        
+               <div style="display: flex; margin-top: 30px">
+               <button style="background-color: rgb(185, 49, 49); width: 160px;
+                           border: none; padding: 9px; color: white;
+                           font-size: 20px; border-radius: 40px;
+                margin:auto; cursor: pointer;" class="ok2">OK!</button>
+                 </div>        
+                </div>                
+                </div> 
+            <!---------------------end of modal chickenjoy bucket---------->  
+</div> 
+</div>
+
+<!---------------------------Second Column of the content--------------------------------------->
+<div class="columnTwo">
+    <!--card one column Two-->
+    <div class="columnTwoPic1"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+
+    <img src="/bestSellerImages/8pcChickenjoyWithPalabok.png" alt="8pcChickenjoyWithPalabok"
+         style="background-color:aliceblue;                   
+         width: 100%; height: auto; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">8-pc. Chickenjoy with <br>
+       Palabok Family Pan</p>
+       <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -13px;">Starts at &#8369 840.00</p>  
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="8pcChickenjoyWithPalabok"       
+           >i</p>
+
+             <!----------------------the modal-------------------->
+             <div class="mainModal-container" id="modal3">        
+        
+              <!-------modal content 8pc chicken joy bucket---------------->
+                     <div class="modal-content" id="modContent">   
+                 
+                 <div class="modal-header" style="display: flex; justify-content: center;
+                           align-items: center;">           
+                      
+                       <h2 style="color: black; padding: 20px;"
+                        > 8 - pc. Chickenjoy with Palabok <br>
+                          Family Pan </h2>        
+                       <span class="close3">&times;</span>        
+                     </div> 
+            
+                     <div id="pictureAndParagraph" 
+                          style=" height: 100px;
+                                 padding: 20px;">
+                     <img src="/bestSellerImages/8pcChickenjoy.png" alt="8pcChickenjoy"
+                         style="width: 135px; margin-left: -10px;">                 
+                      <p id="myPara" style="color: black">8-pcs. of the Philippines' <br>
+                         best-tasting crispylicious, <br>
+                         juicylicious Chickenjoy <br>
+                         paired with your classic <br>
+                         favorite saucy-sarap <br>
+                         Palabok Family Pan with <br>
+                         tasty toppings!.
+                     </p>        
+                   </div>        
+                      <div style="display: flex; margin-top: 30px">
+                       <button style="background-color: rgb(185, 49, 49); width: 160px;
+                               border: none; padding: 9px; color: white;
+                               font-size: 20px; border-radius: 40px;
+                               margin:auto; cursor: pointer;" class="ok3">OK!</button>
+                     </div>        
+                   </div>                
+               </div> 
+        <!---------------------end of modal chickenjoy bucket---------->           
+    
+  </div>
+
+   <!--card two column two-->
+  <div class="columnTwoPic2"
+       style="height:283px; width: auto;
+              background-color:  #e4163d; color: white;
+              border-radius: 4px; position: relative;">
+
+    <img src="/bestSellerImages/6pcChickenjoySolo.png" alt="6pcChickenjoySolo"
+       style="background-color:aliceblue;
+       margin-left: auto; margin-right: auto;
+       width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">6-pc. Chickenjoy Solo</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -13px;">Starts at &#8369 399.00</p>   
+    <p style="position: absolute; color: orange; top: 8px;
+                  font-size: 20px; width: 15px; height: 15px;
+                  border: 2px solid orange; border-radius: 50%;
+                  display: flex; align-items: center; justify-content: center;
+                  right: 10px; user-select: none;"
+              id="6pcChickenjoySolo"   
+                  >i</p>  
+
+                  
+             <!----------------------the modal-------------------->
+             <div class="mainModal-container" id="modal4">        
+        
+              <!-------modal content 6pc chicken with palabok---------------->
+                     <div class="modal-content" id="modContent">   
+                 
+                 <div class="modal-header" style="display: flex; justify-content: center;
+                           align-items: center;">           
+                      
+                       <h2 style="color: black; padding: 20px;"
+                        > 6 - pc. Chickenjoy Solo </h2>     
+                             
+                       <span class="close4">&times;</span>        
+                     </div> 
+            
+                     <div id="pictureAndParagraph" 
+                          style=" height: 100px;
+                                 padding: 20px;">
+                     <img src="/bestSellerImages/6pcChickenjoySolo.png" alt="6pcChickenjoySolo"
+                         style="width: 135px; margin-left: -10px;">                 
+                      <p id="myPara" style="color: black">A bucket of your favorite <br>
+                         crispylicious, juicylicious <br>
+                         Chickenjoy! <br>
+                         
+                     </p>        
+                   </div>        
+                      <div style="display: flex; margin-top: 30px">
+                       <button style="background-color: rgb(185, 49, 49); width: 160px;
+                               border: none; padding: 9px; color: white;
+                               font-size: 20px; border-radius: 40px;
+                               margin:auto; cursor: pointer;" class="ok4">OK!</button>
+                     </div>        
+                   </div>                
+               </div> 
+        <!---------------------end of modal chickenjoy bucket---------->           
+    
+
+  </div>   
+  </div>
+
+
+<!---------------------------third Column of the content--------------------------->
+<div class="columnThree">
+    <!--card one column Three-->
+    <div class="columnThreePic1"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+    <img src="/bestSellerImages/8pcsChickenjoysolo.jpg" alt="8pcsChickenjoysolo"
+         style="background-color:aliceblue;                   
+         width: 100%; height: auto; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">8-pc. Chickenjoy solo</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -13px;">Starts at &#8369 499.00</p> 
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;user-select: none;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="8pcsChickenjoysolo"       
+           >i</p>  
+      
+             <!----------------------the modal-------------------->
+             <div class="mainModal-container" id="modal5">        
+        
+              <!-------modal content 6pc chicken with palabok---------------->
+                     <div class="modal-content" id="modContent">   
+                 
+                 <div class="modal-header" style="display: flex; justify-content: center;
+                           align-items: center;">           
+                      
+                       <h2 style="color: black; padding: 20px;"
+                        > 8 - pc. Chickenjoy Solo </h2>     
+                             
+                       <span class="close5">&times;</span>        
+                     </div> 
+            
+                     <div id="pictureAndParagraph" 
+                          style=" height: 100px;
+                                 padding: 20px;">
+                     <img src="/bestSellerImages/6pcChickenjoySolo.png" alt="6pcChickenjoySolo"
+                         style="width: 135px; margin-left: -10px;">                 
+                      <p id="myPara" style="color: black">A bucket of your favorite <br>
+                         crispylicious, juicylicious <br>
+                         Chickenjoy! <br>
+                         
+                     </p>        
+                   </div>        
+                      <div style="display: flex; margin-top: 30px">
+                       <button style="background-color: rgb(185, 49, 49); width: 160px;
+                               border: none; padding: 9px; color: white;
+                               font-size: 20px; border-radius: 40px;
+                               margin:auto; cursor: pointer;" class="ok5">OK!</button>
+                     </div>        
+                   </div>                
+               </div> 
+        <!---------------------end of modal chickenjoy bucket---------->           
+    
+           
+
+  </div>
+
+    <!--card two column three-->
+    <div class="columnThreePic2"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+ <img src="/newProductsImages/chickenjoyFamilyBox.png" alt="chickenjoyFamilyBox"
+   style="background-color:aliceblue ; width: 100%; height: auto;">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Chickenjoy Family Box</p>
+   <br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 310.00</p>
+  <!--           
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+    id="columnOnePic1Hover" onclick="columnThreePic2Hover()"       
+    >i</p>            
+       -->  
+
+  </div>
+  </div>
+
+<!-------------------------fourth column of the content---------------------------->
+<div class="columnFourth">
+    <!--card one column four-->
+   <div class="columnFourthPic1"
+        style="height:283px; width:auto; 
+        background-color:  #e4163d; color: white;
+        margin-right: 10px; border-radius: 4px;                                                           
+        margin-left: 10px; position: relative;">
+  <img src="/bestSellerImages/ChickenJoyBucketFamilyMeals.png" alt="ChickenJoyBucketFamilyMeals" 
+       style="background-color:aliceblue;                   
+       width: 100%; height: auto; ">
+       <p style="padding-left: 20px;
+                 margin-top: 20px;">Chickenjoy Bucket Family <br>
+          Meals</p>
+          <br>
+       <p style="padding-left: 20px; font-size: 13px;
+                 margin-top: -13px;">Starts at &#8369 520.00</p>  
+ <!--  
+   <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="columnOnePic1Hover" onclick="columnEightPic1Hover()"       
+               >i</p>
+                        -->
+  </div>
+ 
+   <!--card two column four-->
+  <div class="columnFourthPic2"
+       style="height:283px; width: auto;
+       background-color:  #e4163d; color: white;
+       border-radius: 4px; position: relative;">
+  <img src="/familyMealsImages/JollySpaghetti&PalabokFamilyPan.png" alt="JollySpaghetti&PalabokFamilypan"
+  style="background-color:aliceblue;
+  margin-left: auto; margin-right: auto;
+  width: 100%; ">     
+  
+       <p style="padding-left: 20px;
+           margin-top: 20px;">Jolly Spaghetti & Palabok <br>
+                                      Family Pan</p>
+       <br>
+       <p style="padding-left: 20px; font-size: 13px;
+                 margin-top: -13px;">Starts at &#8369 215.00</p>
+   <!--
+   <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="columnOnePic1Hover" onclick="columnEightPic2Hover()"       
+               >i</p>
+               -->
+      </div>  
+   </div>
+
+   
+    <!-----------------------fifth column of the content----------------------->
+    <div class="columnFifth">
+        <!--card one column five-->
+       <div class="columnNinePic1"
+            style="height:283px; width:auto; 
+            background-color:  #e4163d; color: white;
+            margin-right: 10px; border-radius: 4px;                                                           
+            margin-left: 10px; position: relative;">
+       <img src="/bestSellerImages/BurgerBundle.png" alt="BurgerBundle"
+            style="background-color:aliceblue;                   
+            width: 100%; height: auto; ">
+            <p style="padding-left: 20px;
+                      margin-top: 20px;">Burger Bundle</p>
+            <br>
+            <p style="padding-left: 20px; font-size: 13px;
+                      margin-top: -13px;">Starts at &#8369 317.00</p>
+            <p style="position:absolute; font-size: 20px; text-align: center;
+            top: 8px; right: 10px; color: orange; align-items: center;
+            border: 2px solid orange; border-radius: 50px;
+            width: 15px; height: 15px; justify-content: center;
+            margin-left: auto; margin-right: auto; display: flex;"
+               id="BurgerBundle"       
+                   >i</p>
+
+   <!----------------------the modal-------------------->
+   <div class="mainModal-container" id="modal6">        
+        
+    <!-------modal content 6pc chicken with palabok---------------->
+           <div class="modal-content" id="modContent">   
+       
+       <div class="modal-header" style="display: flex; justify-content: center;
+                 align-items: center;">           
+            
+             <h2 style="color: black; padding: 20px;"
+              > Burger Bundle </h2>     
+                   
+             <span class="close6">&times;</span>        
+           </div> 
+  
+           <div id="pictureAndParagraph" 
+                style=" height: 100px;
+                       padding: 20px;">
+           <img src="/bestSellerImages/BurgerBundle.png" alt="BurgerBundle"
+               style="width: 135px; margin-left: -10px;">                 
+            <p id="myPara" style="color: black">3 Burgers, 3 Regular Fries <br>
+               and 3 Regular Drinks <br>
+            
+               
+           </p>        
+         </div>        
+            <div style="display: flex; margin-top: 30px">
+             <button style="background-color: rgb(185, 49, 49); width: 160px;
+                     border: none; padding: 9px; color: white;
+                     font-size: 20px; border-radius: 40px;
+                     margin:auto; cursor: pointer;" class="ok6">OK!</button>
+           </div>        
+         </div>                
+     </div> 
+<!---------------------end of modal chickenjoy bucket---------->           
+
+          </div>
+  
+       <!--card two column fifth-->
+    <div class="columnFifthPic2"
+    style="height:283px; width: auto;
+    background-color:  #e4163d; color: white;
+    border-radius: 4px; position: relative;">
+<img src="/bestSellerImages/YumburgerFamilySavers.png" alt="YumburgerFamilySavers"
+    style="background-color:aliceblue;
+    margin-left: auto; margin-right: auto;
+    width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Yumburger Family Savers</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -13px;">Starts at &#8369 218.00</p>
+ <!--
+ <p style="position:absolute; font-size: 20px; text-align: center;
+     top: 8px; right: 10px; color: orange; align-items: center;
+     border: 2px solid orange; border-radius: 50px;
+     width: 15px; height: 15px; justify-content: center;
+     margin-left: auto; margin-right: auto; display: flex;"
+        id="columnOnePic1Hover" onclick="columnFifthPic2Hover()"       
+            >i</p>
+            -->
+   </div>  
+</div>
+
+<!--------------------------six column of the content----------------->
+<div class="columnSix">
+    <!--card one column six-->
+    <div class="columnsixPic1"
+    style="height:283px; width:auto; 
+            background-color:  #e4163d; color: white;
+            margin-right: 10px; border-radius: 4px;                                                           
+            margin-left: 10px; position: relative;">
+      <img src="/familyMealsImages/champKnock-outDeal.png" alt="champKnock-outDeal"
+      style="background-color:aliceblue;                   
+      width: 100%; height: auto; ">
+       <p style="padding-left: 20px;
+                 margin-top: 20px;">Champ Knock-out Deal</p>
+       <br>
+       <p style="padding-left: 20px; font-size: 13px;
+                 margin-top: -12px">Starts at &#8369 409.00</p>
+        <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="ChampKnockOutDeal"      
+               >i</p>
+
+<!----------------------the modal-------------------->
+  <div class="mainModal-container" id="modal7">        
+        
+ <!-------modal content Champ knock out Deal---------------->
+           <div class="modal-content" id="modContent">   
+       
+       <div class="modal-header" style="display: flex; justify-content: center;
+                 align-items: center;">           
+            
+             <h2 style="color: black; padding: 20px;"
+              > Champ Knock-out Deal </h2>     
+                   
+             <span class="close7">&times;</span>        
+           </div> 
+  
+           <div id="pictureAndParagraph" 
+                style=" height: 100px;
+                       padding: 20px;">
+           <img src="/familyMealsImages/champKnock-outDeal.png" alt="champKnock-outDeal"
+               style="width: 135px; margin-left: -10px;">                 
+            <p id="myPara" style="color: black">2 Champ, 2 Regular Fries <br>
+               and 2 Regular Drinks <br>         
+               
+           </p>        
+         </div>        
+            <div style="display: flex; margin-top: 30px">
+             <button style="background-color: rgb(185, 49, 49); width: 160px;
+                     border: none; padding: 9px; color: white;
+                     font-size: 20px; border-radius: 40px;
+                     margin:auto; cursor: pointer;" class="ok7">OK!</button>
+           </div>        
+         </div>                
+     </div> 
+<!---------------------end of modal chickenjoy bucket---------->                
+    </div>
+
+    <!--card two column six-->
+    <div class="columnsixPic2"
+         style="height:283px; width: auto;
+         background-color:  #e4163d; color: white;
+         border-radius: 4px; position: relative;">
+      <img src="/familyMealsImages/champAll-StartMeal.png" alt="champAll-StartMeal"
+      style="background-color:aliceblue;
+      margin-left: auto; margin-right: auto;
+      width: 100%; ">
+      <p style="padding-left: 20px;
+                margin-top: 20px;">Champ All-Star Meal</p>
+      <br>
+      <p style="padding-left: 20px; font-size: 13px;
+                margin-top: -12px">Starts at &#8369 635.00</p>
+       <p style="position:absolute; font-size: 20px; text-align: center;
+       top: 8px; right: 10px; color: orange; align-items: center;
+       border: 2px solid orange; border-radius: 50px;
+       width: 15px; height: 15px; justify-content: center;
+       margin-left: auto; margin-right: auto; display: flex;"
+          id="ChampAllStarMeal"       
+              >i</p>
+<!----------------------the modal-------------------->
+<div class="mainModal-container" id="modal8">        
+        
+  <!-------modal content Champ All-star Meal---------------->
+            <div class="modal-content" id="modContent">   
+        
+        <div class="modal-header" style="display: flex; justify-content: center;
+                  align-items: center;">           
+             
+              <h2 style="color: black; padding: 20px;"
+               > Champ All-Star Meal </h2>     
+                    
+              <span class="close8">&times;</span>        
+            </div> 
+   
+            <div id="pictureAndParagraph" 
+                 style=" height: 100px;
+                        padding: 20px;">
+            <img src="/familyMealsImages/champAll-StartMeal.png" alt="champKnock-outDeal"
+                style="width: 135px; margin-left: -10px;">                 
+             <p id="myPara" style="color: black">An All-in-one bundle with <br>
+                the 1/3 pound 100% beefy <br>
+                langhap-sarap, goodness of <br>
+                the Classic Champ, Bacon <br>
+                Champ and Amazing Aloha <br>
+                Champ with 3 Regular <br>
+                Fries.         
+                
+            </p>        
+          </div>        
+             <div style="display: flex; margin-top: 30px">
+              <button style="background-color: rgb(185, 49, 49); width: 160px;
+                      border: none; padding: 9px; color: white;
+                      font-size: 20px; border-radius: 40px;
+                      margin:auto; cursor: pointer;" class="ok8">OK!</button>
+            </div>        
+          </div>                
+      </div> 
+ <!---------------------end of modal chickenjoy bucket---------->
+
+    </div>
+</div>
+
+<!-----------------------------Seventh column of the content--------------------->
+ 
+  <div class="columnSeven">
+    <!--card one column seven-->
+      <div class="columnSevenPic1"
+            style="height:283px; width:auto; 
+            background-color:  #e4163d; color: white;
+            margin-right: 10px; border-radius: 4px;                                                           
+            margin-left: 10px; position: relative;">
+       <img src="/familyMealsImages/BurgerSteakFamilySavers.png" alt="BurgerSteakFamilySavers"
+       style="background-color:aliceblue;                   
+       width: 100%; height: auto; ">
+       <p style="padding-left: 20px;
+                 margin-top: 20px;">Burger Steak Family Savers</p>
+       <br>
+       <p style="padding-left: 20px; font-size: 13px;
+                 margin-top: -12px">Starts at &#8369 244.00</p>
+       <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="BurgerSteakFamilySavers"       
+               >i</p>
+
+  <!----------------------the modal-------------------->
+<div class="mainModal-container" id="modal9">        
+        
+  <!-------modal Burger Steak Family Savers---------------->
+            <div class="modal-content" id="modContent">   
+        
+        <div class="modal-header" style="display: flex; justify-content: center;
+                  align-items: center;">           
+             
+              <h2 style="color: black; padding: 20px;"
+               > Burger Steak Family Savers </h2>     
+                    
+              <span class="close9">&times;</span>        
+            </div> 
+   
+            <div id="pictureAndParagraph" 
+                 style=" height: 100px;
+                        padding: 20px;">
+            <img src="/familyMealsImages/BurgerSteakFamilySavers.png" alt="champKnock-outDeal"
+                style="width: 135px; margin-left: -10px;">                 
+             <p id="myPara" style="color: black">3 1-pc Burger Steak and 3 <br>
+                Peach Mango Pies <br>
+               
+                
+            </p>        
+          </div>        
+             <div style="display: flex; margin-top: 30px">
+              <button style="background-color: rgb(185, 49, 49); width: 160px;
+                      border: none; padding: 9px; color: white;
+                      font-size: 20px; border-radius: 40px;
+                      margin:auto; cursor: pointer;" class="ok9">OK!</button>
+            </div>        
+          </div>                
+      </div> 
+ <!---------------------end of modal chickenjoy bucket---------->
+             
+
+
+    </div>
+
+      <!--card two column seven-->
+      <div class="columnSevenPic2"
+           style="height:283px; width: auto;
+           background-color:  #e4163d; color: white;
+           border-radius: 4px; position: relative;">
+       <img src="/familyMealsImages/6-pc.BurgerSteakFamilyPan.png" alt="BurgerSteakFamilyPan"
+       style="background-color:aliceblue;
+       margin-left: auto; margin-right: auto;
+       width: 100%; "> 
+       <p style="padding-left: 20px;
+                 margin-top: 20px;">6-pc. Burger Steak Family <br>
+          Pan</p><br>
+          <p style="padding-left: 20px; font-size: 13px;
+                    margin-top: -12px">Starts at &#8369 280.00</p>  
+          <p style="position:absolute; font-size: 20px; text-align: center;
+          top: 8px; right: 10px; color: orange; align-items: center;
+          border: 2px solid orange; border-radius: 50px;
+          width: 15px; height: 15px; justify-content: center;
+          margin-left: auto; margin-right: auto; display: flex;"
+             id="6pcBurgerSteakFamilyPan"        
+                 >i</p>
+
+ <!----------------------the modal-------------------->
+<div class="mainModal-container" id="modal10">        
+        
+  <!-------modal 6-pc. Burger Steak Family Pan---------------->
+            <div class="modal-content" id="modContent">   
+        
+        <div class="modal-header" style="display: flex; justify-content: center;
+                  align-items: center;">           
+             
+              <h2 style="color: black; padding: 20px;"
+               > 6-pc Burger Steak Family Pan</h2>     
+                    
+              <span class="close10">&times;</span>        
+            </div> 
+   
+            <div id="pictureAndParagraph" 
+                 style=" height: 100px;
+                        padding: 20px;">
+            <img src="/familyMealsImages/6-pc.BurgerSteakFamilyPan.png" alt="6pc burger steak family pan"
+                style="width: 135px; margin-left: -10px;">                 
+             <p id="myPara" style="color: black">A platter of 100% pure <br>
+                beef patty with a hearty <br>
+                serving of flavorful <br>
+                mushroom gravy, good for <br>
+                6.
+               
+                
+            </p>        
+          </div>        
+             <div style="display: flex; margin-top: 30px">
+              <button style="background-color: rgb(185, 49, 49); width: 160px;
+                      border: none; padding: 9px; color: white;
+                      font-size: 20px; border-radius: 40px;
+                      margin:auto; cursor: pointer;" class="ok10">OK!</button>
+            </div>        
+          </div>                
+      </div> 
+ <!---------------------end of modal Burger Steak Family Pan---------->
+                             
+    </div>
+  </div>
+
+
+  <!-----------------------------Eight Column of the Content------------------>
+   <div class="columnEight">
+    <!--card one column Nine-->
+    <div class="columnEightPic1"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+     <img src="/familyMealsImages/8-pc.BurgerSteackFamilyPan.png" alt="BurgerSteackFamilyPan"
+     style="background-color:aliceblue;                   
+     width: 100%; height: auto; " >
+     <p style="padding-left: 20px;
+               margin-top: 20px;">8-pc. Burger Steak Family <br>Pan</p>
+      <br>
+      <p style="padding-left: 20px; font-size:13px;
+                margin-top: -12px">Starts at &#8369 380.00</p>
+      <p style="position:absolute; font-size: 20px; text-align: center;
+        top: 8px; right: 10px; color: orange; align-items: center;
+        border: 2px solid orange; border-radius: 50px;
+        width: 15px; height: 15px; justify-content: center;
+        margin-left: auto; margin-right: auto; display: flex;"
+           id="8pcBurgerSteakFamilyPan"       
+               >i</p>
+   
+   <!----------------------the modal-------------------->
+<div class="mainModal-container" id="modal11">        
+        
+  <!-------modal 8-pc. Burger Steak Family Pan---------------->
+            <div class="modal-content" id="modContent">   
+        
+        <div class="modal-header" style="display: flex; justify-content: center;
+                  align-items: center;">           
+             
+              <h2 style="color: black; padding: 20px;"
+               > 8-pc Burger Steak Family Pan</h2>     
+                    
+              <span class="close11">&times;</span>        
+            </div> 
+   
+            <div id="pictureAndParagraph" 
+                 style=" height: 100px;
+                        padding: 20px;">
+            <img src="/familyMealsImages/6-pc.BurgerSteakFamilyPan.png" alt="6pc burger steak family pan"
+                style="width: 135px; margin-left: -10px;">                 
+             <p id="myPara" style="color: black">A platter of 100% pure <br>
+                beef patty with a hearty <br>
+                serving of flavorful <br>
+                mushroom gravy, good for <br>
+                10.             
+                
+            </p>        
+          </div>        
+             <div style="display: flex; margin-top: 30px">
+              <button style="background-color: rgb(185, 49, 49); width: 160px;
+                      border: none; padding: 9px; color: white;
+                      font-size: 20px; border-radius: 40px;
+                      margin:auto; cursor: pointer;" class="ok11">OK!</button>
+            </div>        
+          </div>                
+      </div> 
+ <!---------------------end of modal Burger Steak Family Pan---------->
+                
+   
+              </div>
+
+    <!--card two column Eight-->    
+    <div class="columnEightPic2"
+    style="height:283px; width: auto;
+    background-color:  #e4163d; color: white;
+    border-radius: 4px; position: relative;">
+        <img src="/familyMealsImages/6-pc.BurgerSteakWithJollySpaghettiFamilyPan.png" alt="BurgerSteakWithJollySpaghettiFamilyPan"
+        style="background-color:aliceblue;
+        margin-left: auto; margin-right: auto;
+        width: 100%; ">
+        <p style="padding-left: 20px;
+                  margin-top: 20px;">6-pc. Burger Steak W/ Jolly <br>
+           Spaghetti Family Pan</p><br>
+           <p style="padding-left: 20px; font-size: 13px;
+                     margin-top: -12px">Starts at &#8369 470.00</p>
+           <p style="position:absolute; font-size: 20px; text-align: center;
+           top: 8px; right: 10px; color: orange; align-items: center;
+           border: 2px solid orange; border-radius: 50px;
+           width: 15px; height: 15px; justify-content: center;
+           margin-left: auto; margin-right: auto; display: flex;"
+              id="6pcBurgerSteakWithJollySpaghettiFamilyPan"      
+                  >i</p>
+
+  <!----------------------the modal-------------------->
+  <div class="mainModal-container" id="modal12">        
+        
+    <!-------modal 6-pc. Burger Steak Family Pan---------------->
+              <div class="modal-content" id="modContent">   
+          
+          <div class="modal-header" style="display: flex; justify-content: center;
+                    align-items: center;">           
+               
+                <h2 style="color: black; padding: 20px;"
+                 > 6-pc Burger Steak w/ Jolly <br>
+                   Spaghetti Family Pan</h2>     
+                      
+                <span class="close12">&times;</span>        
+              </div> 
+     
+              <div id="pictureAndParagraph" 
+                   style=" height: 100px;
+                          padding: 20px;">
+              <img src="/familyMealsImages/6-pc.BurgerSteakFamilyPan.png" alt="6pc burger steak family pan"
+                  style="width: 135px; margin-left: -10px;">                 
+               <p id="myPara" style="color: black">A platter of 100% pure <br>
+                  beef patty with a hearty <br>
+                  serving of flavorful <br>
+                  mushroom gravy, good for <br>
+                  6. Served with the <br>
+                  meatiest, cheesiest and <br>
+                  sweet-sarap Jolly Spaghetti <br>
+                  Family Pan!             
+                  
+              </p>        
+            </div>        
+               <div style="display: flex; margin-top: 30px">
+                <button style="background-color: rgb(185, 49, 49); width: 160px;
+                        border: none; padding: 9px; color: white;
+                        font-size: 20px; border-radius: 40px;
+                        margin:auto; cursor: pointer;" class="ok12">OK!</button>
+              </div>        
+            </div>                
+        </div> 
+   <!---------------------end of modal Burger Steak Family Pan---------->
+
+
+    </div>
+   </div>
+
+<!-----------------------------Nine Column of the Content------------------>
+
+<div class="columnNine">
+    <!--card one column nine-->
+    <div class="columnNinePic1"   
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+   <img src="/familyMealsImages/8-pc.BurgerSteakWithJollySpaghettiFamilyPan.png" alt="BurgerSteakWithJollySpaghettiFamilyPan"
+   style="background-color:aliceblue;                   
+   width: 100%; height: auto; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">8-pc.Burger Steak w/ Jolly <br> Spaghetti Family Pan</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 550</p>
+   <p style="position:absolute; font-size: 20px; text-align: center;
+   top: 8px; right: 10px; color: orange; align-items: center;
+   border: 2px solid orange; border-radius: 50px; user-select: none;
+   width: 15px; height: 15px; justify-content: center;
+   margin-left: auto; margin-right: auto; display: flex;"
+      id="8pcBurgerSteakWithJollySpaghettiFamilyPan"       
+          >i</p>
+
+
+  <!----------------------the modal-------------------->
+  <div class="mainModal-container" id="modal13">        
+        
+    <!-------modal 8-pc. Burger Steak with jolly spaghetti Family Pan---------------->
+              <div class="modal-content" id="modContent">   
+          
+          <div class="modal-header" style="display: flex; justify-content: center;
+                    align-items: center;">           
+               
+                <h2 style="color: black; padding: 20px;"
+                 > 8-pc Burger Steak w/ Jolly <br>
+                   Spaghetti Family Pan</h2>     
+                      
+                <span class="close13">&times;</span>        
+              </div> 
+     
+              <div id="pictureAndParagraph" 
+                   style=" height: 100px;
+                          padding: 20px;">
+              <img src="/familyMealsImages/8-pc.BurgerSteakWithJollySpaghettiFamilyPan.png" alt="8pc burger steak family pan"
+                  style="width: 135px; margin-left: -10px;">                 
+               <p id="myPara" style="color: black">A platter of 100% pure <br>
+                  beef patty with a hearty <br>
+                  serving of flavorful <br>
+                  mushroom gravy, good for <br>
+                  8. Served with the <br>
+                  meatiest, cheesiest and <br>
+                  sweet-sarap Jolly Spaghetti <br>
+                  Family Pan!             
+                  
+              </p>        
+            </div>        
+               <div style="display: flex; margin-top: 30px">
+                <button style="background-color: rgb(185, 49, 49); width: 160px;
+                        border: none; padding: 9px; color: white;
+                        font-size: 20px; border-radius: 40px;
+                        margin:auto; cursor: pointer;" class="ok13">OK!</button>
+              </div>        
+            </div>                
+        </div> 
+   <!---------------------end of modal 8pc Burger Steak with jolly Family Pan---------->
+
+
+
+   </div>
+
+    <!--card two column nine-->
+    <div class="columnNinePic2"
+    style="height:283px; width: auto;
+    background-color:  #e4163d; color: white;
+    border-radius: 4px; position: relative;">
+    <img src="/familyMealsImages/8-pc.BurgerSteakWithPalabokFamilyPan.png" alt="BurgerSteakWithPalabokFamilyPan"
+    style="background-color:aliceblue;
+    margin-left: auto; margin-right: auto;
+    width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">8-pc. Burger Steak w/ <br> palabok Family Pan</p><br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -12px">Starts at &#8369 769</p>    
+    <p style="position:absolute; font-size: 20px; text-align: center;
+           top: 8px; right: 10px; color: orange; align-items: center;
+           border: 2px solid orange; border-radius: 50px;
+           width: 15px; height: 15px; justify-content: center;
+           margin-left: auto; margin-right: auto; display: flex;"
+              id="8pcBurgerSteakwithPalabokFamilyPan"      
+             >i</p>
+
+    <!----------------------the modal-------------------->
+    <div class="mainModal-container" id="modal14">        
+<!-------modal 8-pc. Burger Steak with Palabok Family Pan---------------->
+<div class="modal-content" id="modContent">   
+          
+  <div class="modal-header" style="display: flex; justify-content: center;
+            align-items: center;">           
+       
+        <h2 style="color: black; padding: 20px;"
+         > 8-pc Burger Steak w/ Palabok <br>
+            Family Pan</h2>     
+              
+        <span class="close14">&times;</span>        
+      </div> 
+
+      <div id="pictureAndParagraph" 
+           style=" height: 100px;
+                  padding: 20px;">
+      <img src="/familyMealsImages/8-pc.BurgerSteakWithJollySpaghettiFamilyPan.png" alt="8pc burger steak family pan"
+          style="width: 135px; margin-left: -10px;">                 
+       <p id="myPara" style="color: black">A platter of 100% pure <br>
+          beef patty with a hearty <br>
+          serving of flavorful <br>
+          mushroom gravy, good for <br>
+          8. Served with your classic <br>
+          favorite saucy-sarap <br>
+          Palabok Family Pan with <br>
+          tasty toppings!             
+          
+      </p>        
+    </div>        
+       <div style="display: flex; margin-top: 30px">
+        <button style="background-color: rgb(185, 49, 49); width: 160px;
+                border: none; padding: 9px; color: white;
+                font-size: 20px; border-radius: 40px;
+                margin:auto; cursor: pointer;" class="ok14">OK!</button>
+      </div>        
+    </div>                
+</div> 
+<!---------------------end of modal 8pc Burger Steak with jolly Family Pan---------->
+
+
+    </div>
+</div>
+
+
+<!-----------------------------Ten Column of the Content------------------>
+
+<div class="columnTen">
+    <!--card one column ten-->
+   <div class="columnTenPic1"
+   style="height:283px; width:auto; 
+   background-color:  #e4163d; color: white;
+   margin-right: 10px; border-radius: 4px;                                                           
+   margin-left: 10px; position: relative;" >
+   <img src="/familyMealsImages/6-pcBurgerSteakWithPalabokFamilyPan.png" alt="6-pcBurgerSteakWithPalabokFamilyPan"
+   style="background-color:aliceblue;                   
+   width: 100%; height: auto; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">6-pc.Burger Steak w/ <br> Palabok Family Pan</p><br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -12px">Starts at &#8369 695.00</p>
+     <p style="position:absolute; font-size: 20px; text-align: center;
+     top: 8px; right: 10px; color: orange; align-items: center;
+     border: 2px solid orange; border-radius: 50px; user-select: none;
+     width: 15px; height: 15px; justify-content: center;
+     margin-left: auto; margin-right: auto; display: flex;"
+        id="6pcBurgerSteakwithPalabokFamilyPan"       
+            >i</p>   
+            
+ 
+    <!----------------------the modal-------------------->
+    <div class="mainModal-container" id="modal15">        
+      <!-------modal 6-pc. Burger Steak with Palabok Family Pan---------------->
+      <div class="modal-content" id="modContent">   
+                
+        <div class="modal-header" style="display: flex; justify-content: center;
+                  align-items: center;">           
+             
+              <h2 style="color: black; padding: 20px;"
+               > 6-pc Burger Steak w/ Palabok <br>
+                  Family Pan</h2>     
+                    
+              <span class="close15">&times;</span>        
+            </div> 
+      
+            <div id="pictureAndParagraph" 
+                 style=" height: 100px;
+                        padding: 20px;">
+            <img src="/familyMealsImages/8-pc.BurgerSteakWithJollySpaghettiFamilyPan.png" alt="6pc burger steak family pan"
+                style="width: 135px; margin-left: -10px;">                 
+             <p id="myPara" style="color: black">A platter of 100% pure <br>
+                beef patty with a hearty <br>
+                serving of flavorful <br>
+                mushroom gravy, good for <br>
+                6. Served with your classic <br>
+                favorite saucy-sarap <br>
+                Palabok Family Pan with <br>
+                tasty toppings!                
+            </p>        
+          </div>        
+             <div style="display: flex; margin-top: 30px">
+              <button style="background-color: rgb(185, 49, 49); width: 160px;
+                      border: none; padding: 9px; color: white;
+                      font-size: 20px; border-radius: 40px;
+                      margin:auto; cursor: pointer;" class="ok15">OK!</button>
+            </div>        
+          </div>                
+      </div> 
+      <!---------------------end of modal 8pc Burger Steak with jolly Family Pan---------->
+                 
+
+
+   </div>
+
+   <!--card two column ten-->
+   <div class="columnTenPic2"
+    style="height:283px; width: auto;
+    background-color:  #e4163d; color: white;
+    border-radius: 4px; position: relative;">
+   <img src="/familyMealsImages/snackTimeFamilySaversFor3.png" alt="snackTimeFamilySaversFor3"
+   style="background-color:aliceblue;
+   margin-left: auto; margin-right: auto;
+   width: 100%; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Snack Time Family Savers For 3 <br> for 3</p><br>
+   <p style="padding-left: 20px; font-size:13px;
+             margin-top: -12px">Starts at &#8369 265.00</p>
+<p style="position:absolute; font-size: 20px; text-align: center;
+top: 8px; right: 10px; color: orange; align-items: center;
+border: 2px solid orange; border-radius: 50px; user-select: none;
+width: 15px; height: 15px; justify-content: center;
+margin-left: auto; margin-right: auto; display: flex;"
+   id="snackTimeFamilySaversFor3"      
+       >i</p>
+  
+ <!----------------------the modal-------------------->
+ <div class="mainModal-container" id="modal16">        
+  <!-------modal 6-pc. Burger Steak with Palabok Family Pan---------------->
+  <div class="modal-content" id="modContent">   
+            
+    <div class="modal-header" style="display: flex; justify-content: center;
+              align-items: center;">           
+         
+          <h2 style="color: black; padding: 20px;"
+           >Snack Time Family Savers for 3</h2>     
+                
+          <span class="close16">&times;</span>        
+        </div> 
+  
+        <div id="pictureAndParagraph" 
+             style=" height: 100px;
+                    padding: 20px;">
+        <img src="/familyMealsImages/8-pc.BurgerSteakWithJollySpaghettiFamilyPan.png" alt="6pc burger steak family pan"
+            style="width: 135px; margin-left: -10px;">                 
+         <p id="myPara" style="color: black">3 Original Tuna Pie, 3 <br>
+            Peach Mango Pie, and 3 <br>
+            Regular Drinks. <br>
+                       
+        </p>        
+      </div>        
+         <div style="display: flex; margin-top: 30px">
+          <button style="background-color: rgb(185, 49, 49); width: 160px;
+                  border: none; padding: 9px; color: white;
+                  font-size: 20px; border-radius: 40px;
+                  margin:auto; cursor: pointer;" class="ok16">OK!</button>
+        </div>        
+      </div>                
+  </div> 
+  <!---------------------end of modal Snack---------->
+             
+
+
+
+      </div>
+</div>
+
+<!-----------------------------Eleven Column of the Content------------------>
+
+<div class="columnEleven">
+<!--card one eleven column-->
+<div class="columnElevenPic1"
+style="height:283px; width:auto; 
+background-color:  #e4163d; color: white;
+margin-right: 10px; border-radius: 4px;                                                           
+margin-left: 10px; position: relative;">
+<img src="/familyMealsImages/SnackTimeFamilySaversFor4.png" alt="SnackTimeFamilySaversFor4"
+style="background-color:aliceblue;                   
+   width: 100%; height: auto; ">
+<p style="padding-left: 20px;
+          margin-top: 20px;">Snack Time Family Savers <br>For 4</p><br>
+<p style="padding-left: 20px; font-size: 13px;
+          margin-top: -12px">Starts at &#8369 317.00</p>
+ <p style="position:absolute; font-size: 20px; text-align: center;
+ top: 8px; right: 10px; color: orange; align-items: center;
+ border: 2px solid orange; border-radius: 50px;
+ width: 15px; height: 15px; justify-content: center;
+ margin-left: auto; margin-right: auto; display: flex;"
+    id="SnackTimeFamilySaversFor4"       
+        >i</p> 
+
+ 
+ <!----------------------the modal-------------------->
+ <div class="mainModal-container" id="modal17">        
+  <!-------modal Snack Time Family Savers for 4---------------->
+  <div class="modal-content" id="modContent">   
+            
+    <div class="modal-header" style="display: flex; justify-content: center;
+              align-items: center;">           
+         
+          <h2 style="color: black; padding: 20px;"
+           >Snack Time Family Savers for 4</h2>     
+                
+          <span class="close17">&times;</span>        
+        </div> 
+  
+        <div id="pictureAndParagraph" 
+             style=" height: 100px;
+                    padding: 20px;">
+        <img src="/familyMealsImages/SnackTimeFamilySaversFor4.png" alt="6pc burger steak family pan"
+            style="width: 135px; margin-left: -10px;">                 
+         <p id="myPara" style="color: black">2 Original Tuna Pie, 2 <br>
+          Yumburger, and 4 Coke <br>
+          Floats.                      
+        </p>        
+      </div>        
+         <div style="display: flex; margin-top: 30px">
+          <button style="background-color: rgb(185, 49, 49); width: 160px;
+                  border: none; padding: 9px; color: white;
+                  font-size: 20px; border-radius: 40px;
+                  margin:auto; cursor: pointer;" class="ok17">OK!</button>
+        </div>        
+      </div>                
+  </div> 
+  <!---------------------end of modal Snack---------->
+
+
+</div>
+
+<!--card two eleven column-->
+<div class="columnElevenPic2"
+style="height:283px; width: auto;
+background-color:  #e4163d; color: white;
+border-radius: 4px; position: relative;">
+<img src="/familyMealsImages/JollyCrispyFriesBucket.png" alt="JollyCrispyFriesBucket"
+style="background-color:aliceblue;
+margin-left: auto; margin-right: auto;
+width: 100%; ">
+<p style="padding-left: 20px;
+          margin-top: 20px;">Jolly Crispy Fries Bucket</p><br>
+<p  style="padding-left: 20px; font-size: 13px;
+margin-top: -12px">Starts at &#8369 149.00</p>
+
+<!--
+<p style="position:absolute; font-size: 20px; text-align: center;
+top: 8px; right: 10px; color: orange; align-items: center;
+border: 2px solid orange; border-radius: 50px;
+width: 15px; height: 15px; justify-content: center;
+margin-left: auto; margin-right: auto; display: flex;"
+   id="columnOnePic1Hover"  
+       >i</p>
+         -->
+</div>
+</div>
+
+<!-----------------------------Twelve Column of the Content------------------>
+
+<div class="columnTwelve">
+    <!--card one column twelve-->
+    <div class="columnTwelvePic1"
+    style="height:283px; width:auto; 
+background-color:  #e4163d; color: white;
+margin-right: 10px; border-radius: 4px;                                                           
+margin-left: 10px; position: relative;">
+     <img src="/familyMealsImages/AssortedDozenPiesTo-go.png" alt="AssortedDozenPiesTo-go"
+     style="background-color:aliceblue;
+margin-left: auto; margin-right: auto;
+width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Assorted Dozen Pies To-Go</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -12px">Starts at &#8369 403.00</p>
+    <!--          
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnTwelvePic1Hover()"       
+           >i</p> 
+              -->
+    </div>
+
+    <!--card two column twelve-->
+    <div class="columnTwelvePic2"
+    style="height:283px; width: auto;
+    background-color:  #e4163d; color: white;
+    border-radius: 4px; position: relative;">
+     <img src="/familyMealsImages/Sweet6PiesTo-Go.png" alt="Sweet6PiesTo-Go"
+     style="background-color:aliceblue;
+     margin-left: auto; margin-right: auto;
+     width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Sweet 6 Pies To-Go</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+    margin-top: -12px">Starts at &#8369 211.00</p>
+   
+   <!--
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnTwelvePic1Hover()"       
+           >i</p> 
+               -->
+
+    </div>
+</div>
+
+<!-------------------Thirteent column--------------------->
+<div class="columnTen">
+  <!--card one column Ten-->
+  <div class="columnTenPic1"
+  style="height:283px; width:auto; 
+  background-color:  #e4163d; color: white;
+  margin-right: 10px; border-radius: 4px;                                                           
+  margin-left: 10px; position: relative; width: 250px;
+  " >
+      <img src="/familyMealsImages/JoyAtHomeBirthdaySet.png" alt="Bacon,Egg,&CheeseSandwich"
+      style="background-color:aliceblue ; width: 100%; height: auto;">
+      <p style="padding-left: 20px;
+                margin-top: 20px;">Joy At Home Birthday Set</p><br>
+      <p style="padding-left: 20px; font-size: 13px;
+                margin-top: -12px">Starts at &#8369 80.00</p>
+  <!--   
+     <p style="position:absolute; font-size: 20px; text-align: center;
+      top: 8px; right: 10px; color: orange; align-items: center;
+      border: 2px solid orange; border-radius: 50px;
+      width: 15px; height: 15px; justify-content: center;
+      margin-left: auto; margin-right: auto; display: flex;"
+      id="columnOnePic1Hover" onclick="columnTenPic2Hover()"       
+      >i</p>     
+          -->
+  </div>
+</div>
+
+
+
+ <!-----------------------------Footer Section--------------------------------->
+ <div class="footer" style="margin-top: 10px;">
+    <!--Footer first div section-->
+  <div class="divOne"
+       style="color: white ; padding-top: 40px; padding-left: 30px;">
+
+    <h3 style="margin-bottom: 26px ;">Stay Connected</h3>
+    <div class="icons">
+     <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram" style="font-size:40px ; color: rgb(165, 40, 40); padding-right: 7px;" id="instagram"></i></a>
+     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="font-size: 40px; color: rgb(165, 40, 40); padding-right: 7px;"></i></a>
+     <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-square-twitter" style="font-size: 40px; color:rgb(165, 40, 40)"></i></a>
+    </div>
+  </div>
+   
+   <!--Footer second div section-->
+  <div class="divTwo"
+       style="color: white; padding-left: 30px; margin-top: 30px"
+     >
+    <h3>Stay up-to-date</h3>
+    <p style="margin-top: 12px ;">Don't miss out on exclusive online offers!</p>
+    <h4 style="margin-top: 20px;">Enter your Email</h4>
+  
+    <div class="signUp" style="display: flex; margin-top: -28px;">
+    <p style="border-bottom: 1px solid white;
+       width: 300px; "></p>
+    <h4 style="background-color: orange;
+       padding: 9px 38px; border-radius: 0px 25px 25px 0px; ">SIGN UP</h4>
+    </div>
+  </div>
+
+   <!--Footer third div section-->
+   <div class="divThree" style="color: white; padding-left: 30px;">
+    <h4 style="margin-top: 40px; margin-bottom: 25px;">Useful Links</h4>
+    
+    <div class="links">
+    <p>About Us</p>
+    <p>Stores</p>
+    <p>Privacy Policy</p>
+    <p>T&C</p>
+    <p>Feedback</p>
+    <p>Customer Care</p>
+    <p>Multi-Delivery</p>
+    </div>
+
+   </div>
+
+     <div class="copyright" style="color: white; margin-left: 3
+     0px; font-size: 13px; font-weight: bold; display: block; text-align: center;">
+      <p style="margin-top: 15px;">Copyright &copy; 2019 Joeybee. All Rights Reserved.</p>
+     </div>
+
+
+  </div>
+
+</div>
+
+<script src="/familyMeals.js"></script>
+
+</body>
+</html>

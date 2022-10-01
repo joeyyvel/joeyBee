@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menuPage.css">
+    <title>MenuPage</title>
+</head>
+<body>
+ 
+    <div class="header" style="position: fixed; z-index: 1;">
+        <div class="burgerMenu" onclick="navOpen()">
+          &#9776
+        </div>
+        
+        <div class="spongePhoto">
+          <img src="/images/sponge2.png" class="spongePhoto2" alt="">
+          <div class="homeMenu"> Home </div>
+        </div>       
+  
+        <div class="sign-In">
+          <p id="signIn">Sign In</p>
+          <img src="/images/pictureFour.jpg" class="sponge1" alt="">  
+        </div>
+     </div>
+
+
+      <div class="main-container" >
+
+        <!-------------------------------Hidden left side navigation bar---------------------->
+        <div class="leftSideNav" id="navId" style="z-index: 2;">
+          <a href="#" id="btnClose" onclick="navClose()">&times;</a>
+          <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-house" style="margin-right: 15px;"></i> Home</a>
+          <a href="https://goo.gl/maps/eRH3zBimoB4CzRw5A" target="_blank"><i class="fa-solid fa-shop" style="margin-right: 15px;"></i> Stores</a>
+          <a href="#" onclick="menu()"><i class="fa-solid fa-utensils"  style="margin-right: 15px;"></i> Menu</a>
+             
+          <!--Dropdown div use to hide and show the menu list-->
+                      <div class="dropdown" id="myMenu">
+          
+                         <!--list item shows the menu list-->
+                             <div id="list-itemOne">
+                                 <a href="http://127.0.0.1:5500/menuPage.html">Menu Page</a>
+                                 <a href="http://127.0.0.1:5500/bestSeller.html">Best Sellers</a>
+                                 <a href="http://127.0.0.1:5500/newProducts.html">New Products</a>
+                                 <a href="http://127.0.0.1:5500/familyMeals.html">Family Meals</a>
+                                 <a href="http://127.0.0.1:5500/breakFastJoys.html">Breakfast Joys</a>
+                                 <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+                                 <a href="http://127.0.0.1:5500/Chickenjoy.html">chickenJoy</a>
+                                 <a href="http://127.0.0.1:5500/Burgers.html">Burgers</a>
+                                 <a href="http://127.0.0.1:5500/JollySpaghetti.html">Jolly Spaghetti</a>
+                                 <a href="http://127.0.0.1:5500/burgerSteak.html">Burger Steak</a>
+                                 <a href="http://127.0.0.1:5500/superMeals.html">Super Meals</a>
+                                 <a href="http://127.0.0.1:5500/chickenSandwich.html">Chicken Sandwich</a>
+                                 <a href="http://127.0.0.1:5500/jollyHotdog&Pies.html">Jolly Hotdog & Pies</a>
+                                 <a href="http://127.0.0.1:5500/Palabok.html#">Palabok</a>
+                                 <a href="http://127.0.0.1:5500/Fries&Sides.html">Fries and Sides</a>
+                                 <a href="http://127.0.0.1:5500/Desserts.html">Desserts</a>
+                                 <a href="http://127.0.0.1:5500/Beverages.html">Beverages</a>
+                                 <a href="http://127.0.0.1:5500/JollyKiddieMeal.html">Jolly Kiddie Meal</a>
+                             </div>
+ 
+                    </div>               
+         
+          <a href="#"><i class="fa-solid fa-bell-concierge" style="margin-right: 15px;"></i>About</a>
+      </div> 
+ 
+ <!-----------------------------------------End of left navbar------------------------------------->
+
+  <!--Best Seller Bar-->
+  <div class="sellerBar" >
+    <h3 id="arrow">&#8592</h3>
+    <h3 id="bestTitle">Menu</h3>
+ </div>
+
+ 
+ <!-----------start of menu images---------->
+ <div class="main-photo">
+  
+  <div class="card1" onclick="myId()">    
+    <div class="titleMenu"> Best Seller</div>  
+    <div class="childCard">SELECT</div>   
+  </div>
+  <div class="card2" id="myId2">
+    <div class="titleMenu"> New Products</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card3" onclick="myId3()">
+    <div class="titleMenu"> Family Meals</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card4" id="myId4">
+    <div class="titleMenu"> Breakfast Joys</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card5" onclick="myId5()">
+    <div class="titleMenu"> Breakfast </div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card6" id="myId6">
+    <div class="titleMenu">Chickenjoy</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card7" onclick="myId7()">
+    <div class="titleMenu">Burgers</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card8" id="myId8">
+    <div class="titleMenu">Jolly Spaghetti</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card9" onclick="myId9()">
+    <div class="titleMenu">Burger Steak</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card10" id="myId10">
+    <div class="titleMenu">Super Meals</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card11" onclick="myId11()">
+    <div class="titleMenu">Chicken Sandwich</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card12" id="myId12">
+    <div class="titleMenu">Jolly Hotdog & Pies</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card13" onclick="myId13()">
+    <div class="titleMenu">Palabok</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card14" id="myId14">
+    <div class="titleMenu">Fries & Sides</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card15" onclick="myId15()">
+    <div class="titleMenu">Desserts</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card16" id="myId16">
+    <div class="titleMenu">Beverages</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+  <div class="card17" onclick="myId17()">
+    <div class="titleMenu">Jolly Kiddie Meal</div>  
+    <div class="childCard">SELECT</div>
+  </div>
+ </div>
+
+
+
+
+
+<script src="/menuPage.js"></script>
+ 
+
+
+</body>
+</html>

@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6c578579b6.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/breakFastJoysImages/grace30.png">
+    <link rel="stylesheet" href="breakFastJoys.css">
+    <title>Breakfast Joys</title>
+</head>
+<body onload="myFunction()">
+
+    <!---------------loading animation starts to roll----------->
+      <div id="loader"></div>
+
+    <div class="header">
+        <div class="burgerMenu" style="user-select: none;" onclick="navOpen()">
+          &#9776
+        </div>
+  
+        <div class="spongePhoto">
+          <img src="/images/sponge2.png" class="spongePhoto2" alt="">
+        </div>
+  
+        <div class="sign-In">
+          <p id="signIn">Sign In</p>
+          <img src="/images/pictureFour.jpg" class="sponge1" alt="">
+  
+        </div>
+  
+      </div>
+
+      <div class="main-container" id="myDiv" style="display: none ;" >
+
+        <!-------------------------------------Hidden left side navigation bar-------------------------->
+
+        <div class="leftSideNav" id="navId" style="z-index: 2;">
+    <a href="#" id="btnClose" onclick="navClose()">&times;</a>
+    <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-house" style="margin-right: 15px;"></i> Home</a>
+    <a href="https://goo.gl/maps/eRH3zBimoB4CzRw5A" target="_blank"><i class="fa-solid fa-shop" style="margin-right: 15px;"></i> Stores</a>
+    <a href="#" onclick="menu()"><i class="fa-solid fa-utensils"  style="margin-right: 15px;"></i> Menu</a>
+       
+    <!--Dropdown div use to hide and show the menu list-->
+                <div class="dropdown" id="myMenu">
+    
+                   <!--list item shows the menu list-->
+                       <div id="list-itemOne">
+                           <a href="http://127.0.0.1:5500/menuPage.html">Menu Page</a>
+                           <a href="http://127.0.0.1:5500/bestSeller.html">Best Sellers</a>
+                           <a href="http://127.0.0.1:5500/newProducts.html">New Products</a>
+                           <a href="http://127.0.0.1:5500/familyMeals.html">Family Meals</a>
+                           <a href="http://127.0.0.1:5500/breakFastJoys.html">Breakfast Joys</a>
+                           <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+                           <a href="http://127.0.0.1:5500/Chickenjoy.html">chickenJoy</a>
+                           <a href="http://127.0.0.1:5500/Burgers.html">Burgers</a>
+                           <a href="http://127.0.0.1:5500/JollySpaghetti.html">Jolly Spaghetti</a>
+                           <a href="http://127.0.0.1:5500/burgerSteak.html">Burger Steak</a>
+                           <a href="http://127.0.0.1:5500/superMeals.html">Super Meals</a>
+                           <a href="http://127.0.0.1:5500/chickenSandwich.html">Chicken Sandwich</a>
+                           <a href="http://127.0.0.1:5500/jollyHotdog&Pies.html">Jolly Hotdog & Pies</a>
+                           <a href="http://127.0.0.1:5500/Palabok.html#">Palabok</a>
+                           <a href="http://127.0.0.1:5500/Fries&Sides.html">Fries and Sides</a>
+                           <a href="http://127.0.0.1:5500/Desserts.html">Desserts</a>
+                           <a href="http://127.0.0.1:5500/Beverages.html">Beverages</a>
+                           <a href="http://127.0.0.1:5500/JollyKiddieMeal.html">Jolly Kiddie Meal</a>
+                       </div>
+
+              </div>               
+   
+    <a href="#"><i class="fa-solid fa-bell-concierge" style="margin-right: 15px;"></i>About</a>
+</div> 
+
+<!-----------------------------------------End of left navbar------------------------------------->
+
+           <!--Best Seller Bar-->
+           <div class="sellerBar">
+            <h3 id="arrow">&#8592</h3>
+            <h3 id="bestTitle">Breakfast Joys</h3>
+        </div>
+
+<!-----------------------First column of the content-------------------------->
+
+<div class="columnOne">
+    <!--card one column One-->
+    <div class="columnOnePic1"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+     <img src="/breakFastJoysImages/LongganisaSolo.png" alt="LongganisaSolo"
+     style="background-color:aliceblue;                   
+              width: 100%; height: auto; ">
+      <p style="padding-left: 20px;
+                margin-top: 20px;">Longganisa Solo</p><br>
+      <p style="padding-left: 20px; font-size: 13px;
+                margin-top: -12px">Starts at &#8369 138.00</p>
+       <p style="position:absolute; font-size: 20px; text-align: center;
+       top: 8px; right: 10px; color: orange; align-items: center;
+       border: 2px solid orange; border-radius: 50px; user-select: none;
+       width: 15px; height: 15px; justify-content: center;
+       margin-left: auto; margin-right: auto; display: flex;"
+       id="LongganisaSolo"      
+       >i</p>
+
+ <!----------------------the modal-------------------->
+ <div class="mainModal-container" id="modal">        
+        
+  <!-------modal Longganisa Solo---------------->
+         <div class="modal-content" id="modContent">   
+     
+     <div class="modal-header" style="display: flex; justify-content: center;
+               align-items: center;">           
+          
+           <h2 style="color: black; padding: 20px;"
+            > Longganisa Solo </h2>
+
+           <span class="close">&times;</span>
+
+         </div> 
+
+         <div id="pictureAndParagraph" 
+              style=" height: 100px;
+                     padding: 20px;">
+         <img src="/bestSellerImages/8pcChickenjoy.png" alt="8pcChickenjoy"
+             style="width: 135px; margin-left: -10px;"
+         >
+          <p id="myPara" style="color: black"> 2 pieces of mildly seasoned <br>
+             Longganisa served with<br>
+             garlic rice and fried egg <br>             
+         </p>
+
+       </div>
+
+          <div style="display: flex; margin-top: 30px">
+           <button style="background-color: rgb(185, 49, 49); width: 160px;
+                   border: none; padding: 9px; color: white;
+                   font-size: 20px; border-radius: 40px;
+                   margin:auto; cursor: pointer;" class="ok">OK!</button>
+         </div>
+
+        </div>        
+         
+        </div> 
+    <!---------------------end of modal Longganisa Solo---------->    
+      
+
+
+    </div>
+
+    <!--card two column Two-->
+    <div class="columnTwoPic2"
+    style="height:283px; width: auto;
+          background-color:  #e4163d; color: white;
+          border-radius: 4px; position: relative;">
+    <img src="/breakFastJoysImages/LongganisaWithDrink.png" alt="LongganisaWithDrink"
+    style="background-color:aliceblue;
+              margin-left: auto; margin-right: auto;
+              width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Longganisa With Drink</p><br>
+    <p style="padding-left: 20px; font-size: 13px;
+                margin-top: -12px">Starts at &#8369 170.00</p>
+    <p style="position: absolute; color: orange; top: 8px;
+    font-size: 20px; width: 15px; height: 15px;
+    border: 2px solid orange; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    right: 10px; user-select: none;" 
+id="LongganisaWithDrink"  
+    >i</p>  
+    
+    
+ <!----------------------the modal-------------------->
+ <div class="mainModal-container" id="modal2">        
+        
+  <!-------modal Longganisa Solo---------------->
+         <div class="modal-content" id="modContent">   
+     
+     <div class="modal-header" style="display: flex; justify-content: center;
+               align-items: center;">           
+          
+           <h2 style="color: black; padding: 20px;"
+            > Longganisa w/ Drink </h2>
+
+           <span class="close2">&times;</span>
+
+         </div> 
+
+         <div id="pictureAndParagraph" 
+              style=" height: 100px;
+                     padding: 20px;">
+         <img src="/bestSellerImages/8pcChickenjoy.png" alt="8pcChickenjoy"
+             style="width: 135px; margin-left: -10px;"
+         >
+          <p id="myPara" style="color: black"> 2 pieces of mildly seasoned <br>
+             Longganisa served with<br>
+             garlic rice and fried egg <br>             
+         </p>
+
+       </div>
+
+          <div style="display: flex; margin-top: 30px">
+           <button style="background-color: rgb(185, 49, 49); width: 160px;
+                   border: none; padding: 9px; color: white;
+                   font-size: 20px; border-radius: 40px;
+                   margin:auto; cursor: pointer;" class="ok2">OK!</button>
+         </div>
+
+        </div>        
+         
+        </div> 
+    <!---------------------end of modal chickenjoy bucket---------->    
+      
+    </div>
+</div>
+
+<!-----------------------First column of the content-------------------------->
+
+<div class="columnTwo">
+   <!--card one column Two-->
+   <div class="columnTwoPic1"
+   style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+   <img src="/breakFastJoysImages/BreakfastHotdogSolo.png" alt="/BreakfastHotdogSolo"
+   style="background-color:aliceblue;                   
+              width: 100%; height: auto; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Breakfast Hotdog Solo </p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 91.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;user-select: none;
+    margin-left: auto; margin-right: auto; display: flex;"
+    id="BreakfastHotdogSolo"      
+    >i</p>
+    
+    <!----------------------the modal-------------------->
+ <div class="mainModal-container" id="modal3">        
+        
+  <!-------modal Longganisa Solo---------------->
+         <div class="modal-content" id="modContent">   
+     
+     <div class="modal-header" style="display: flex; justify-content: center;
+               align-items: center;">           
+          
+           <h2 style="color: black; padding: 20px;"
+            > Breakfast Hotdog solo </h2>
+
+           <span class="close3">&times;</span>
+
+         </div> 
+
+         <div id="pictureAndParagraph" 
+              style=" height: 100px;
+                     padding: 20px;">
+         <img src="/bestSellerImages/8pcChickenjoy.png" alt="8pcChickenjoy"
+             style="width: 135px; margin-left: -10px;"
+         >
+          <p id="myPara" style="color: black"> Meaty hotdog served with <br>            
+             garlic rice and fried egg <br>             
+         </p>
+
+       </div>
+
+          <div style="display: flex; margin-top: 30px">
+           <button style="background-color: rgb(185, 49, 49); width: 160px;
+                   border: none; padding: 9px; color: white;
+                   font-size: 20px; border-radius: 40px;
+                   margin:auto; cursor: pointer;" class="ok3">OK!</button>
+         </div>
+
+        </div>        
+         
+        </div> 
+    <!---------------------end of modal chickenjoy bucket---------->    
+
+   </div>
+
+   <!--card two column Two-->
+   <div class="columnTwoPic2"
+   style="height:283px; width: auto;
+          background-color:  #e4163d; color: white;
+          border-radius: 4px; position: relative;">
+   <img src="/breakFastJoysImages/BreakfastHotdogWithDrink.png" alt="BreakfastHotdogWithDrink"
+   style="background-color:aliceblue;
+              margin-left: auto; margin-right: auto;
+              width: 100%; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Breakfast Hotdod with Drinks</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+   margin-top: -12px">Starts at &#8369 117.00</p>
+   <p style="position: absolute; color: orange; top: 8px;
+   font-size: 20px; width: 15px; height: 15px;
+   border: 2px solid orange; border-radius: 50%;
+   display: flex; align-items: center; justify-content: center;
+   right: 10px;"
+id="BreakfastHotdogw/Drink"    
+   >i</p> 
+
+  
+    <!----------------------the modal-------------------->
+    <div class="mainModal-container" id="modal4">        
+        
+      <!-------modal Longganisa Solo---------------->
+             <div class="modal-content" id="modContent">   
+         
+         <div class="modal-header" style="display: flex; justify-content: center;
+                   align-items: center;">           
+              
+               <h2 style="color: black; padding: 20px;"
+                > Breakfast Hotdog w/ Drink </h2>
+    
+               <span class="close4">&times;</span>
+    
+             </div> 
+    
+             <div id="pictureAndParagraph" 
+                  style=" height: 100px;
+                         padding: 20px;">
+             <img src="/bestSellerImages/8pcChickenjoy.png" alt="8pcChickenjoy"
+                 style="width: 135px; margin-left: -10px;"
+             >
+              <p id="myPara" style="color: black"> Meaty hotdog served with <br>            
+                 garlic rice and fried egg <br>             
+             </p>
+    
+           </div>
+    
+              <div style="display: flex; margin-top: 30px">
+               <button style="background-color: rgb(185, 49, 49); width: 160px;
+                       border: none; padding: 9px; color: white;
+                       font-size: 20px; border-radius: 40px;
+                       margin:auto; cursor: pointer;" class="ok4">OK!</button>
+             </div>
+    
+            </div>        
+             
+            </div> 
+        <!---------------------end of modal chickenjoy bucket---------->    
+
+
+   </div>
+</div>
+
+
+ <!-----------------------------Footer Section--------------------------------->
+ <div class="footer" style="margin-top: 10px;">
+    <!--Footer first div section-->
+  <div class="divOne"
+       style="color: white ; padding-top: 40px; padding-left: 30px;">
+
+    <h3 style="margin-bottom: 26px ;">Stay Connected</h3>
+    <div class="icons">
+     <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram" style="font-size:40px ; color: rgb(165, 40, 40); padding-right: 7px;" id="instagram"></i></a>
+     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="font-size: 40px; color: rgb(165, 40, 40); padding-right: 7px;"></i></a>
+     <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-square-twitter" style="font-size: 40px; color:rgb(165, 40, 40)"></i></a>
+    </div>
+  </div>
+   
+   <!--Footer second div section-->
+  <div class="divTwo"
+       style="color: white; padding-left: 30px; margin-top: 30px"
+     >
+    <h3>Stay up-to-date</h3>
+    <p style="margin-top: 12px ;">Don't miss out on exclusive online offers!</p>
+    <h4 style="margin-top: 20px;">Enter your Email</h4>
+  
+    <div class="signUp" style="display: flex; margin-top: -28px;">
+    <p style="border-bottom: 1px solid white;
+       width: 300px; "></p>
+    <h4 style="background-color: orange;
+       padding: 9px 38px; border-radius: 0px 25px 25px 0px; ">SIGN UP</h4>
+    </div>
+  </div>
+
+   <!--Footer third div section-->
+   <div class="divThree" style="color: white; padding-left: 30px;">
+    <h4 style="margin-top: 40px; margin-bottom: 25px;">Useful Links</h4>
+    
+    <div class="links">
+    <p>About Us</p>
+    <p>Stores</p>
+    <p>Privacy Policy</p>
+    <p>T&C</p>
+    <p>Feedback</p>
+    <p>Customer Care</p>
+    <p>Multi-Delivery</p>
+    </div>
+
+   </div>
+
+     <div class="copyright" style="color: white; margin-left: 3
+     0px; font-size: 13px; font-weight: bold; display: block; text-align: center;">
+      <p style="margin-top: 15px;">Copyright &copy; 2019 Joeybee. All Rights Reserved.</p>
+     </div>
+
+
+  </div>
+
+
+      </div>
+
+
+    <script src="/breakFastJoys.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="signUp.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1 id="title">HTML Forms</h1>
+
+  <form action="">
+    <label for="fname" id="name">Name :</label>
+    <input type="text" id="fname" value="Joey"><br><br>
+    <label for="lastName" id="lastName">Lastname: </label>
+    <input type="text" id="sureName" value="Doe">
+    <br><br>
+    <input type="submit" value="submit" id="submit">
+  </form>
+
+  <h2 id="passwordInput" style="margin-top:25px ;
+                                margin-left: 20px;
+                                color: red;
+                                font-weight: bolder;
+                                margin-bottom: 25px;
+  "> Password Input Control </h2>
+   <form action="">
+     <div class="inputControl" style="margin-left: 20px ;">
+    User ID: <input type="text" name="userID" style="margin-left: 11px;">
+    <br><br>
+    Password: <input type="password" id="password" name="password">
+  </div>
+   </form>
+
+   <h2 class="multipleControl">Multiple-Line Input Control</h2>
+   <form action="" style="margin-left: 20px ;">
+       description: <br>
+     <textarea name="myRow" id="myRow" cols="30" rows="10">
+       Enter description here...
+
+     </textarea>
+   </form>
+
+   <h2 id="checkbox">Checkbox Control</h2>
+    <form action="" id="check" style="margin-left:20px;
+                                      color:rgb(47, 5, 185);
+                                      font-size: 20px;
+                                                                        " >
+      <input type="checkbox" name="Maths" style="background-color: blue;" value="on">Math
+      <input type="checkbox" name="Physics" value="on">Physics
+
+    </form>
+
+    <h2 id="radioBox">Radio Box Control</h2>
+     <form action="">
+      <input type="radio" name="subject" value="math">Math:
+      <input type="radio" name="subject" value="physics">Physics:
+
+     </form>
+
+     <h2 id="selectBox">Select Box Control</h2>
+     <form action="">
+        <select name="dropdown" id="myDrop">
+        <option value="maths" selected>Math</option>
+         <option value="physics">Physics</option>
+        </select>
+      </form>
+
+      <h2 id="upload">File Upload Box</h2>
+      <form action="">
+        <input type="file" name="fileupload" accept="image/*" style="margin-left:20px ;">
+      </form>
+
+      <h2 style="margin-left: 20px;
+                 margin-top: 20px;
+                 color: blue;
+                 margin-bottom: 10px;
+      ">File Upload Box</h2>
+      <form action="">
+       <input type="submit" name="submit" value="submit"
+               style="padding:10px; background-color:orange"/>
+       <input type="reset" name="reset" value="reset"
+               style="padding:10px; background-color:pink"/>
+        <input type="button" name="ok" value="ok" 
+                style="background-color: yellow; padding: 10px;"/>
+        <input type="image" name="imagebutton" src="/images/sponge2.png"
+                style="border-radius:25px ;"/>
+      </form>
+
+</body>
+</html>

@@ -1,0 +1,666 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+.header{
+    height: 58px;
+    background-color: #e4163d;
+    width: 100%;
+    display: flex;   
+    justify-content: space-between ;
+    align-items: center;  
+    top: 0.1px;
+    user-select: none;   
+   
+   
+}
+.burgerMenu{
+    color: white;    
+    padding-left: 10px;   
+    font-size: 23px;
+    cursor: pointer;
+    
+}
+.homeMenu{
+    display: none;
+}
+
+/* -----------------left side navbar ---------------*/  
+.leftSideNav{
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: #111;
+    position: fixed;
+    z-index: 1;
+    transition: 0.5s;
+    padding-top: 10px;
+
+}
+.leftSideNav a{
+    font-size: 18px;
+    font-weight: bolder;
+    color: orange;
+    text-decoration: none;
+    margin-left: 60px;
+    display: block;
+    line-height: 2.2rem;
+    
+}
+.leftSideNav a:hover{
+    color: red;
+
+}
+.leftSideNav #btnClose{
+    margin-left: 200px;
+    color: aqua;
+    font-size: 45px;
+}
+.leftSideNav #btnClose:hover{
+    color: rgb(38, 0, 255);
+}
+/*--------------------------end of left side navbar--------------------*/
+.spongePhoto2{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    margin-right: 30px;
+    border-radius: 5px;
+    
+}
+.sign-In{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    
+}
+#signIn{
+    color:white;
+    margin-right: 10px;
+    font-size: 19px;
+    font-weight: bold;
+   
+}
+#signIn:hover{
+    color: #078b2c;
+}
+.sponge1{
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+/*--------------------Menu Bar-----------------*/
+.sellerBar{    
+    height: 41px;
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;        
+    background-color: rgb(255, 255, 255);   
+    box-shadow:  1px 3px 17px #2ea0e2;  
+    top: 57px;
+    position: sticky;
+    z-index: 1; 
+   
+}
+.sellerBar:hover{
+    background-color: #d02c91;
+}
+#arrow{
+    margin-left: 20px;
+}
+#arrow:hover{
+    color: red;
+}
+#bestTitle{
+    margin-left: 20px;
+}
+#bestTitle:hover{
+    color:#0ecf4e;
+}
+/*-----------Menu photo boxe's----------*/
+
+.main-photo{
+    margin-top: 33px;
+    display: flex;     
+    justify-content: center;
+    align-items: center;  
+    flex-wrap: wrap;
+      
+}
+.main-photo > div{
+    background-color: rgb(236, 197, 40);    
+    margin-right: 5px;    
+    height: 211px;
+    width: 48%;
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 0px 0px 7px 7px;   
+    display: flex;
+    justify-content: center;
+    text-align: center;   
+    
+}
+
+.childCard{
+    color: white;
+    margin-top: 170px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 42px;   
+    border-radius: 0px 0px 7px 7px;
+    width: 100%;
+}
+.titleMenu{  
+     
+    font-size: 20px;
+    font-weight:bolder;
+    position: absolute;
+    margin-top: 127px;
+}
+
+.main-container{
+    background-color: rgb(255, 248, 248) ; 
+    width: 97%;
+    margin:auto
+}
+.card1{
+       background-image: url(/MenuPhotos/BestSeller.png);
+       background-size: 130px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-position-y: 20px;   
+      
+
+}
+.card2{
+       background-image: url(/MenuPhotos/NewProducts.png);
+       background-size: 110px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-position-y: 10px;
+}
+.card3{
+      background-image: url(/MenuPhotos/FamilyMeals.png);
+      background-size: 130px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 25px;
+}
+.card4{
+      background-image: url(/MenuPhotos/BreakfastJoys.png);
+      background-size: 130px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 25px;
+}
+.card5{
+      background-image: url(/MenuPhotos/Breakfast.png);
+      background-size: 130px;
+      background-repeat: no-repeat;
+      background-position: center; 
+      background-position-y: 25px;    
+}
+.card6{
+      background-image: url(/MenuPhotos/Chickenjoy.png);
+      background-size: 130px; 
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 25px;
+}
+.card7{
+      background-image: url(/MenuPhotos/Burgers.png);
+      background-size: 130px; 
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 25px;
+}
+.card8{
+      background-image: url(/MenuPhotos/JollySpaghetti.png);
+      background-size: 130px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 25px;
+}
+.card9{
+      background-image: url(/MenuPhotos/BurgerSteak.png);
+      background-size: 130px; 
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position-y: 25px;
+}
+.card10{
+     background-image: url(/MenuPhotos/SuperMeals.png);
+     background-size: 130px;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-position-y: 25px;
+}
+.card11{
+    background-image: url(/MenuPhotos/ChickenSandwich.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;
+}
+.card12{
+    background-image: url(/MenuPhotos/JollyHotdog&Pies.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;
+}
+.card13{
+    background-image: url(/MenuPhotos/Palabok.png);
+    background-size: 130px; 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;    
+}
+.card14{
+    background-image: url(/MenuPhotos/Fries&Sides.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;
+}
+.card15{
+    background-image: url(/MenuPhotos/Desserts.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;
+}
+.card16{
+    background-image: url(/MenuPhotos/Beverages.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;
+}
+.card17{
+    background-image: url(/MenuPhotos/JollyKiddieMeal.png);
+    background-size: 130px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 25px;
+}
+
+/*------cards on hover for opacity----*/
+.card1:hover, .card2:hover, .card3:hover, .card4:hover, .card5:hover,
+.card6:hover, .card7:hover, .card8:hover, .card9:hover, .card10:hover,
+.card11:hover, .card12:hover, .card13:hover, .card14:hover, .card15:hover,
+.card16:hover, .card17:hover{
+    cursor: pointer;
+    opacity: 0.6;
+
+}
+
+/* --------- at media screen upon resizing 500px -----------*/
+
+@media (min-width: 600px){
+    .main-photo{
+        background-color: rgb(128, 0, 62);
+    }
+    .main-photo > div{        
+        margin: auto;
+        margin-bottom: 10px;
+        margin-right: 2px;
+        width: 290px;
+    }
+    
+}
+
+/* --------- at media screen upon resizing 500px -----------*/
+
+@media (min-width: 503px){
+    .main-photo{
+        background-color: green;
+    }
+    .main-photo > div{    
+        display: flex;            
+        margin: auto;
+        margin-bottom: 10px;
+        margin-right: 4px;
+        width: 48%;
+    }
+    
+}
+/* --------- at media screen upon resizing 500px -----------*/
+
+@media (min-width: 640px){
+    .header{
+        background-color: #e4163d;
+    }
+    .spongePhoto{
+        display: flex;
+        align-items: center;        
+        flex: content;      
+        padding-left: 20px;
+        
+        
+    }
+    .burgerMenu{
+        display: none;
+    }
+    .homeMenu{
+        display: contents;         
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+           
+    }
+    .homeMenu:hover{
+        color: #078b2c;
+    }
+    .main-photo{
+        background-color: yellow;
+        padding-top: 48px;
+    }
+    .main-photo > div{
+        margin: auto;
+        margin-bottom: 15px;
+        width: 31%;
+        height: 234px;
+    }
+    .sellerBar{
+        display: none;
+    }
+    .childCard{
+        margin-top: 192px
+    }
+    .titleMenu{
+        margin-top: 152px;
+    }
+    .card1{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card2{
+        background-size: 162px;
+        background-position-y: 10px;
+    }
+    .card3{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card4{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card5{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card6{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card7{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card8{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card9{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card10{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card11{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card12{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card13{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card14{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card15{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+    .card16{
+        background-size: 172px;
+        background-position-y: 19px;
+        
+    }
+    .card17{
+        background-size: 172px;
+        background-position-y: 19px;
+    }
+
+}
+
+/* --------- at media screen upon resizing 500px -----------*/
+
+@media (min-width: 1020px){
+    .header{
+        height: 90px;
+    }
+    .main-photo{
+        background-color: rgb(250, 250, 251);
+        padding-top: 88px;
+        
+    }
+    .main-photo > div{
+        
+        width: 23.5%;
+        margin-right: 5px;
+        margin: auto;
+        height: 353px;
+        margin-bottom: 15px;
+    }
+    .childCard{
+        margin-top: 294px;
+        height: 59px;   
+    }
+    .titleMenu{
+        margin-top: 244px;
+        font-size: 27px;
+        font-weight: 600;
+    }
+    .card1{
+        background-size: 270px;
+        background-position-y: 45px;
+    }
+    .card2{
+        background-size: 190px;
+        background-position-y: 40px;
+    }
+    .card3{
+        background-size: 260px;
+        background-position-y: 40px;
+    }
+    .card4{
+        background-size: 270px;
+        background-position-y: 42px;
+    }
+    .card5{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card6{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card7{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card8{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card9{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card10{
+        background-size: 270px;
+        background-position-y: 42px;
+    }
+    .card11{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card12{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card13{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card14{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card15{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card16{
+        background-size: 270px;
+        
+    }
+    .card17{
+        background-size: 270px;
+       
+    }
+    .sellerBar{
+        display: none;
+    }
+   
+}
+
+
+/* --------- at media creen upon resizing 1220px -----------*/
+@media screen and (min-width: 1220px) {
+    body{
+      background-image: url(/MenuPhotos/myPhoto.png);
+      width: 100%;
+    }
+    .main-container{
+        width: 89.5% ;       
+    }    
+    .main-photo > div{
+        width: 272px;
+        margin: auto;
+        margin-bottom: 20px;
+        height: 355px;
+       
+    }
+    .childCard{
+        margin-top: 295px;
+        height:60px ;
+        font-size: 17px;
+    }
+    .titleMenu{
+        font-size: 28px;
+        font-weight:550;
+        margin-top: 247px;
+    }
+    .card1{
+        background-size: 270px;
+        background-position-y: 45px;
+    }
+    .card2{
+        background-size: 190px;
+        background-position-y: 40px;
+    }
+    .card3{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card4{
+        background-size: 270px;
+        background-position-y: 42px;
+    }
+    .card5{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card6{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card7{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card8{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card9{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card10{
+        background-size: 270px;
+        background-position-y: 42px;
+    }
+    .card11{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card12{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card13{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card14{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card15{
+        background-size: 270px;
+        background-position-y: 40px;
+    }
+    .card16{
+        background-size: 270px;
+        
+    }
+    .card17{
+        background-size: 270px;
+       
+    }    
+}
+
+
+
+
+
+
+

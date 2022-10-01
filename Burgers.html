@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6c578579b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/burgers.css">
+    <link rel="icon" href="/burgersImages/burgers30Pixel.png">
+    <title>Burgers</title>
+</head>
+<body onload="myFunction()">
+
+     <!---------------------------loading animation starts to roll------------------>
+     <div id="loader"></div>
+    
+
+     <!------------------headers nav bar-------------->
+     <div class="header">
+        <div class="burgerMenu" style="user-select: none;" onclick="navOpen()">
+          &#9776
+        </div>
+  
+        <div class="spongePhoto">
+          <img src="/images/sponge2.png" class="spongePhoto2" alt="">
+        </div>
+  
+        <div class="sign-In">
+          <p id="signIn">Sign In</p>
+          <img src="/images/pictureFour.jpg" class="sponge1" alt="">
+  
+        </div>  
+      </div>
+  
+     <!---------------main container and bottom up animation--------------> 
+  <div class="main-container" id="myDiv" style="display: none;">
+
+     <!-------------------------------Hidden left side navigation bar---------------------->
+     <div class="leftSideNav" id="navId" style="z-index: 2;">
+        <a href="#" id="btnClose" onclick="navClose()">&times;</a>
+        <a href="http://127.0.0.1:5500/index.html"><i class="fa-solid fa-house" style="margin-right: 15px;"></i> Home</a>
+        <a href="https://goo.gl/maps/eRH3zBimoB4CzRw5A" target="_blank"><i class="fa-solid fa-shop" style="margin-right: 15px;"></i> Stores</a>
+        <a href="#" onclick="menu()"><i class="fa-solid fa-utensils"  style="margin-right: 15px;"></i> Menu</a>
+           
+        <!--Dropdown div use to hide and show the menu list-->
+                    <div class="dropdown" id="myMenu">
+        
+                       <!--list item shows the menu list-->
+                           <div id="list-itemOne">
+                               <a href="http://127.0.0.1:5500/menuPage.html">Menu Page</a>
+                               <a href="http://127.0.0.1:5500/bestSeller.html">Best Sellers</a>
+                               <a href="http://127.0.0.1:5500/newProducts.html">New Products</a>
+                               <a href="http://127.0.0.1:5500/familyMeals.html">Family Meals</a>
+                               <a href="http://127.0.0.1:5500/breakFastJoys.html">Breakfast Joys</a>
+                               <a href="http://127.0.0.1:5500/Breakfast.html">Breakfast</a>
+                               <a href="http://127.0.0.1:5500/Chickenjoy.html">chickenJoy</a>
+                               <a href="http://127.0.0.1:5500/Burgers.html">Burgers</a>
+                               <a href="http://127.0.0.1:5500/JollySpaghetti.html">Jolly Spaghetti</a>
+                               <a href="http://127.0.0.1:5500/burgerSteak.html">Burger Steak</a>
+                               <a href="http://127.0.0.1:5500/superMeals.html">Super Meals</a>
+                               <a href="http://127.0.0.1:5500/chickenSandwich.html">Chicken Sandwich</a>
+                               <a href="http://127.0.0.1:5500/chickenSandwich.html">Jolly Hotdog & Pies</a>
+                               <a href="http://127.0.0.1:5500/Palabok.html">Palabok</a>
+                               <a href="http://127.0.0.1:5500/Fries&Sides.html">Fries and Sides</a>
+                               <a href="http://127.0.0.1:5500/Desserts.html">Desserts</a>
+                               <a href="http://127.0.0.1:5500/Beverages.html">Beverages</a>
+                               <a href="http://127.0.0.1:5500/JollyKiddieMeal.html">Jolly Kiddie Meal</a>
+                        </div>
+                  </div>               
+       
+        <a href="#"><i class="fa-solid fa-bell-concierge" style="margin-right: 15px;"></i>About</a>
+    </div> 
+
+<!-----------------------------------------End of left navbar------------------------------------->
+
+ <!--Best Seller Bar-->
+ <div class="sellerBar">
+    <h3 id="arrow">&#8592</h3>
+    <h3 id="bestTitle">Burgers</h3>
+  </div>
+
+
+<!------------------------------First Column of the Content-------------------------->
+
+ <!--First column of the content-->
+ <div class="columnOne">
+  <!--card one column Two-->
+  <div class="columnOnePic1"
+       style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+
+  <img src="/newProductsImages/spicyChamp.png" alt="spicyChamp"
+  style="background-color:aliceblue ; width: 100%; height: auto;">
+  <p style="padding-left: 20px;
+            margin-top: 20px;">Spicy Champ</p>
+  <br>
+  <p style="padding-left: 20px; margin-top: -12px;
+            font-size: 13px;">Starts at &#8369 186.00</p>
+  <p style="position:absolute; font-size: 20px; text-align: center;
+  top: 8px; right: 10px; color: orange; align-items: center;
+  border: 2px solid orange; border-radius: 50px;
+  width: 15px; height: 15px; justify-content: center;
+  margin-left: auto; margin-right: auto; display: flex;"
+  id="columnOnePic1Hover" onclick="columnOnePic1Hover()"       
+ >i</p>                     
+
+  </div>
+  <!--card two column One-->
+  <div class="columnOnePic2"
+       style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       border-radius: 4px; margin-right: 10px;                                                          
+       margin-left: 10px; position: relative;">
+  <img src="/newProductsImages/spicyChampJr.png" alt="spicyChampJr"
+   style="background-color:aliceblue ; width: 100%; height: auto;">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Spicy Champ Jr.</p>
+   <br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 84.00</p>
+   <p style="position:absolute; font-size: 20px; text-align: center;
+   top: 8px; right: 10px; color: orange; align-items: center;
+   border: 2px solid orange; border-radius: 50px;
+   width: 15px; height: 15px; justify-content: center;
+   margin-left: auto; margin-right: auto; display: flex;"
+   id="columnOnePic1Hover" onclick="columnOnePic2Hover()"       
+>i</p>                     
+  </div> 
+</div>
+
+
+<!----------------------------Second Column of the Content-------------------------->
+<div class="columnTwo">
+  <!--card one column two-->
+ <div class="columnTwoPic1"
+      style="height:283px; width:auto; 
+      background-color:  #e4163d; color: white;
+      margin-right: 10px; border-radius: 4px;                                                           
+      margin-left: 10px; position: relative;">
+ <img src="/bestSellerImages/BurgerBundle.png" alt="BurgerBundle"
+      style="background-color:aliceblue;                   
+      width: 100%; height: auto; ">
+      <p style="padding-left: 20px;
+                margin-top: 20px;">Burger Bundle</p>
+      <br>
+      <p style="padding-left: 20px; font-size: 13px;
+                margin-top: -13px;">Starts at &#8369 317.00</p>
+      <p style="position:absolute; font-size: 20px; text-align: center;
+      top: 8px; right: 10px; color: orange; align-items: center;
+      border: 2px solid orange; border-radius: 50px;
+      width: 15px; height: 15px; justify-content: center;
+      margin-left: auto; margin-right: auto; display: flex;"
+         id="columnOnePic1Hover" onclick="columnTwoPic1Hover()"       
+             >i</p>
+    </div>
+
+     <!--card two column two-->
+     <div class="columnTwoPic2"
+     style="height:283px; width: auto;
+     background-color:  #e4163d; color: white; 
+      margin-right: 10px;
+     border-radius: 4px; position: relative;">
+    <img src="/bestSellerImages/YumburgerFamilySavers.png" alt="YumburgerFamilySavers"
+     style="background-color:aliceblue;
+     margin-left: auto; margin-right: auto;
+     width: 100%; ">
+     <p style="padding-left: 20px;
+               margin-top: 20px;">Yumburger Family Savers</p>
+     <br>
+     <p style="padding-left: 20px; font-size: 13px;
+               margin-top: -13px;">Starts at &#8369 218.00</p>
+     <p style="position:absolute; font-size: 20px; text-align: center;
+      top: 8px; right: 10px; color: orange; align-items: center;
+      border: 2px solid orange; border-radius: 50px;
+      width: 15px; height: 15px; justify-content: center;
+      margin-left: auto; margin-right: auto; display: flex;"
+         id="columnOnePic1Hover" onclick="columnEightPic2Hover()"       
+             >i</p>
+    </div>  
+ </div>
+
+<!--------------------------------Third column of the content------------------------->
+
+<div class="columnThree">
+  <!--card one third column-->
+  <div class="columnThreePic1"
+  style="height:283px; width:auto; 
+  background-color:  #e4163d; color: white;
+   border-radius: 4px;                                                          
+  margin-left: 10px; position: relative;">
+  <img src="/familyMealsImages/SnackTimeFamilySaversFor4.png" alt="SnackTimeFamilySaversFor4"
+  style="background-color:aliceblue;  margin-left: auto; margin-right: auto;                 
+     width: 100%; height: auto; ">
+  <p style="padding-left: 20px;
+            margin-top: 20px;">Snack Time Family Savers <br>For 4</p><br>
+  <p style="padding-left: 20px; font-size: 13px;
+            margin-top: -12px">Starts at &#8369 317.00</p>
+   <p style="position:absolute; font-size: 20px; text-align: center;
+   top: 8px; right: 10px; color: orange; align-items: center;
+   border: 2px solid orange; border-radius: 50px;
+   width: 15px; height: 15px; justify-content: center;
+   margin-left: auto; margin-right: auto; display: flex;"
+      id="columnOnePic1Hover" onclick="columnThreePic1Hover()"       
+          >i</p> 
+  </div>
+
+   <!--card one column three-->
+   <div class="columnThreePic2"
+   style="height:283px; width:auto; 
+           background-color:  #e4163d; color: white;
+           margin-right: 10px; border-radius: 4px;                                                           
+           margin-left: 10px; position: relative;">
+     <img src="/familyMealsImages/champKnock-outDeal.png" alt="champKnock-outDeal"
+     style="background-color:aliceblue;                   
+     width: 100%; height: auto; ">
+      <p style="padding-left: 20px;
+                margin-top: 20px;">Champ Knock-out Deal</p>
+      <br>
+      <p style="padding-left: 20px; font-size: 13px;
+                margin-top: -12px">Starts at &#8369 409.00</p>
+       <p style="position:absolute; font-size: 20px; text-align: center;
+       top: 8px; right: 10px; color: orange; align-items: center;
+       border: 2px solid orange; border-radius: 50px;
+       width: 15px; height: 15px; justify-content: center;
+       margin-left: auto; margin-right: auto; display: flex;"
+          id="columnOnePic1Hover" onclick="columnThreePic2Hover()"       
+              >i</p>
+   </div>
+  </div>
+
+
+<!--------------------------------Fourth column of the content------------------------->
+
+   <div class="columnFourth">
+
+    <!--card one column four-->   
+    <div class="columnFourPic1"
+    style="height:283px; width:auto; 
+    background-color:  #e4163d; color: white;
+    margin-right: 10px; border-radius: 4px;                                                           
+    margin-left: 10px; position: relative;">
+    <img src="/familyMealsImages/champAll-StartMeal.png" alt="champAll-StartMeal"
+         style="background-color:aliceblue;
+         margin-left: auto; margin-right: auto;
+         width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Champ All-Star Meal</p>
+    <br>
+    <p style="padding-left: 20px; font-size: 13px;
+           margin-top: -12px">Starts at &#8369 635.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+     id="columnOnePic1Hover" onclick="columnFourPic2Hover()"       
+         >i</p>
+
+    </div>
+
+  <!--card two column four-->
+  <div class="columnFourPic2"
+  style="height:283px; width:auto; 
+  background-color:  #e4163d; color: white;
+  margin-right: 10px; border-radius: 4px;                                                           
+ position: relative;">
+  <img src="/bestSellerImages/Yumburger.png" alt="Yumburger" 
+  style="background-color:aliceblue;
+  margin-left: auto; margin-right: auto;
+  width: 100%; ">
+  <p style="padding-left: 20px;
+            margin-top: 20px;">Yumburger</p>
+  <br>
+  <p style="padding-left: 20px; font-size: 13px;
+         margin-top: -13px;">Starts at &#8369 39.00</p>   
+  <p style="position:absolute; font-size: 20px; text-align: center;
+   top: 8px; right: 10px; color: orange; align-items: center;
+   border: 2px solid orange; border-radius: 50px;
+   width: 15px; height: 15px; justify-content: center;
+   margin-left: auto; margin-right: auto; display: flex;"
+   id="columnOnePic1Hover" onclick="columnFourPic2Hover()"       
+          >i</p>
+   </div>
+
+</div>  
+ 
+<!--------------------------------Fifth column of the content------------------------->
+
+<div class="columnSix">
+  <!--card one column six-->
+  <div class="columnSixPic1"
+       style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+ <img src="/bestSellerImages/CheesyYumburger.png" alt="CheesyYumburger" 
+ style="background-color:aliceblue;                   
+ width: 100%; height: auto; ">
+ <p style="padding-left: 20px;
+           margin-top: 20px;">Cheesy Yumburger</p>
+ <br>
+ <p style="padding-left: 20px; font-size: 13px;
+           margin-top: -13px;">Starts at &#8369 59.00</p>
+ <p style="position:absolute; font-size: 20px; text-align: center;
+      top: 8px; right: 10px; color: orange; align-items: center;
+      border: 2px solid orange; border-radius: 50px;
+      width: 15px; height: 15px; justify-content: center;
+      margin-left: auto; margin-right: auto; display: flex;"
+         id="columnOnePic1Hover" onclick="columnSixPic1Hover()"       
+             >i</p>
+</div>
+
+<!--card two column six-->
+<div class="columnSixPic2"
+style="height:283px; width:auto; 
+background-color:  #e4163d; color: white;
+margin-right: 10px; border-radius: 4px;                                                           
+position: relative;">
+
+ <img src="/burgersImages/baconCheesyYumburger.png" alt="baconCheesyYumburger"
+ style="background-color:aliceblue;
+  margin-left: auto; margin-right: auto;
+  width: 100%; ">
+ <p style="padding-left: 20px;
+           margin-top: 20px;">Bacon Cheesy Yumburger</p><br>
+ <p style="padding-left: 20px; font-size: 13px;
+           margin-top: -12px;">Starts at &#8369</p>
+  <p style="position:absolute; font-size: 20px; text-align: center;
+  top: 8px; right: 10px; color: orange; align-items: center;
+  border: 2px solid orange; border-radius: 50px;
+  width: 15px; height: 15px; justify-content: center;
+  margin-left: auto; margin-right: auto; display: flex;"
+  id="columnOnePic1Hover" onclick="columnFourPic2Hover()"       
+         >i</p>
+    </div>
+  </div>
+
+
+ <!-------------------------Sixth column of the content------------------------->
+
+ <div class="columnSix">
+   <!--card one column six-->
+   <div class="columnSixPic1"
+   style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+   <img src="/burgersImages/amazingAlohaChampjr.png" alt="amazingAlohaChampjr"
+   style="background-color:aliceblue;                   
+   width: 100%; height: auto; ">
+   <p style="padding-left: 20px;
+              margin-top: 20px;">Amazing Aloha Champ Jr</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+            margin-top:-12px;">Starts at &#8369 105.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnSixPic1Hover()"       
+           >i</p>        
+   </div>
+
+   <!--card two column six-->
+   <div class="columnSixPic2"
+   style="height:283px; width:auto; 
+   background-color:  #e4163d; color: white;
+   margin-right: 10px; border-radius: 4px;                                                           
+   position: relative;">
+   <img src="/burgersImages/champjr.png" alt="champjr"
+   style="background-color:aliceblue;
+  margin-left: auto; margin-right: auto;
+  width: 100%; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Champ Jr.</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+            margin-top:12px;">Starts at &#8369 80.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+    id="columnOnePic1Hover" onclick="columnSixPic2Hover()"       
+           >i</p>
+   </div>
+ </div>
+
+<!-------------------------Seven column of the content------------------------->
+
+<div class="columnSeven">
+  <!--card one column seven-->
+  <div class="columnSevenPic1"
+  style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+  <img src="/burgersImages/baconChampjr.png" alt="baconChampjr"
+  style="background-color:aliceblue;                   
+  width: 100%; height: auto; ">
+  <p style="padding-left: 20px;
+            margin-top: 20px;">Bacon Champ Jr.</p><br>
+  <p style="padding-left: 20px; font-size: 13px;
+            margin-top: -12px">Starts at &#8369 105.00</p>
+  <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnSevenPic1Hover()"       
+           >i</p>
+  </div>
+
+  <!--card two column seven-->
+ <div class="columnSevenPic2"
+ style="height:283px; width:auto; 
+   background-color:  #e4163d; color: white;
+   margin-right: 10px; border-radius: 4px;                                                           
+   position: relative;">
+  <img src="/burgersImages/AmazingAlohaChampJrWithOutBacon.png" alt="AmazingAlohaChampJrWithOutBacon"
+  style="background-color:aliceblue;
+  margin-left: auto; margin-right: auto;
+  width: 100%; ">
+  <p  style="padding-left: 20px;
+             margin-top: 20px;">Amazing Aloha Champ Jr. <br> W/o Bacon</p><br>
+  <p style="padding-left: 20px; font-size: 13px;
+  margin-top: -12px">Starts at &#8369</p>
+  <p style="position:absolute; font-size: 20px; text-align: center;
+   top: 8px; right: 10px; color: orange; align-items: center;
+   border: 2px solid orange; border-radius: 50px;
+   width: 15px; height: 15px; justify-content: center;
+   margin-left: auto; margin-right: auto; display: flex;"
+   id="columnOnePic1Hover" onclick="columnSevenPic2Hover()"       
+          >i</p>
+ </div>
+</div>
+
+<!-------------------------Eight column of the content------------------------->
+
+<div class="columnEight">
+  <!--card one column Eight-->
+     <div class="columnEightPic1"
+     style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+     <img src="/burgersImages/doubleBaconCheesyYumburger.png" alt="doubleBaconCheesyYumburger"
+     style="background-color:aliceblue;                   
+     width: 100%; height: auto; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Double Bacon Cheesy <br> Yumburger</p><br>
+    <p style="padding-left: 20px; font-size: 13px;
+              margin-top: -12px">Starts at &#8369 148.00</p> 
+     <p style="position:absolute; font-size: 20px; text-align: center;
+     top: 8px; right: 10px; color: orange; align-items: center;
+     border: 2px solid orange; border-radius: 50px;
+     width: 15px; height: 15px; justify-content: center;
+     margin-left: auto; margin-right: auto; display: flex;"
+        id="columnOnePic1Hover" onclick="columnEightPic1Hover()"       
+            >i</p>
+    </div>
+
+  <!--card two column Eight-->
+     <div class="columnEightPic2"
+     style="height:283px; width:auto; 
+   background-color:  #e4163d; color: white;
+   margin-right: 10px; border-radius: 4px;                                                           
+   position: relative;">
+     <img src="/burgersImages/doubleAmazingAlohaChampjr.png" alt="doubleAmazingAlohaChampjr"
+     style="background-color:aliceblue;
+     margin-left: auto; margin-right: auto;
+     width: 100%; ">
+    <p style="padding-left: 20px;
+              margin-top: 20px;">Double Amazing Aloha <br>Champ Jr.</p><br>
+    <p style="padding-left: 20px; font-size: 13px;
+    margin-top: -12px">Starts at &#8369 147.00</p> 
+     <p style="position:absolute; font-size: 20px; text-align: center;
+     top: 8px; right: 10px; color: orange; align-items: center;
+     border: 2px solid orange; border-radius: 50px;
+     width: 15px; height: 15px; justify-content: center;
+     margin-left: auto; margin-right: auto; display: flex;"
+     id="columnOnePic1Hover" onclick="columnEightPic2Hover()"       
+            >i</p>
+    </div>
+</div>
+
+<!-------------------------Nine column of the content------------------------->
+
+<div class="columnNine">
+  <!--card one column Nine-->
+  <div class="columnNinePic1"
+  style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+   <img src="/burgersImages/doubleBaconChampjr.png" alt="doubleBaconChampjr"
+   style="background-color:aliceblue;                   
+     width: 100%; height: auto; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Double Bacon Champ Jr.</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 181.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnNinePic1Hover()"       
+           >i</p>
+  </div>
+
+
+  <!--card two column Nine-->
+  <div class="columnNinePic2"
+  style="height:283px; width:auto; 
+  background-color:  #e4163d; color: white;
+  margin-right: 10px; border-radius: 4px;                                                           
+  position: relative;">
+   <img src="/burgersImages/doubleAmazingAlohaChampJr.WithoutBacon.png" alt="doubleAmazingAlohaChampjr"
+   style="background-color:aliceblue;
+   margin-left: auto; margin-right: auto;
+   width: 100%; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Double Amazing Aloha <br>Champ Jr. w/o Bacon</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 137.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+    id="columnOnePic1Hover" onclick="columNinePic2Hover()"       
+           >i</p>         
+  </div>
+</div>
+
+<!-------------------------Tenth column of the content------------------------->
+
+<div class="columnTen">
+  <!--card one column ten-->
+  <div class="columnTenPic1"
+  style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+  <img src="/burgersImages/champ.png" alt="champ"
+  style="background-color:aliceblue;                   
+  width: 100%; height: auto; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Champ</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+            margin-top: -12px">Starts at &#8369 155.00</p>
+   <p style="position:absolute; font-size: 20px; text-align: center;
+   top: 8px; right: 10px; color: orange; align-items: center;
+   border: 2px solid orange; border-radius: 50px;
+   width: 15px; height: 15px; justify-content: center;
+   margin-left: auto; margin-right: auto; display: flex;"
+      id="columnOnePic1Hover" onclick="columnTenPic1Hover()"       
+          >i</p>
+  </div>
+
+  <!--card two column ten-->
+  <div class="columnTenPic2"
+  style="height:283px; width:auto; 
+  background-color:  #e4163d; color: white;
+  margin-right: 10px; border-radius: 4px;                                                           
+  position: relative;">
+  <img src="/burgersImages/baconChamp.png" alt="baconChamp"
+  style="background-color:aliceblue;
+   margin-left: auto; margin-right: auto;
+   width: 100%; ">
+  <p style="padding-left: 20px;
+            margin-top: 20px;">Bacon Champ</p><br>
+  <p style="padding-left: 20px; font-size: 13px;
+  margin-top: -12px">Starts at &#8369 211.00</p>
+  <p style="position:absolute; font-size: 20px; text-align: center;
+  top: 8px; right: 10px; color: orange; align-items: center;
+  border: 2px solid orange; border-radius: 50px;
+  width: 15px; height: 15px; justify-content: center;
+  margin-left: auto; margin-right: auto; display: flex;"
+  id="columnOnePic1Hover" onclick="columnTenPic2Hover()"       
+         >i</p>
+  </div>
+</div>
+
+<!-------------------------Eleven column of the content------------------------->
+
+<div class="columnEleven">
+  <!--card one column eleven-->
+  <div class="columnElevenPic1"
+  style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative;">
+   <img src="/burgersImages/amazingAlohaChamp.png" alt="amazingAlohaChamp"
+   style="background-color:aliceblue;                   
+  width: 100%; height: auto; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Amazing Aloha Champ</p><br>
+   <p style="padding-left: 20px; font-size: 13px;
+             margin-top: -12px">Starts at &#8369 218.00</p>
+    <p style="position:absolute; font-size: 20px; text-align: center;
+    top: 8px; right: 10px; color: orange; align-items: center;
+    border: 2px solid orange; border-radius: 50px;
+    width: 15px; height: 15px; justify-content: center;
+    margin-left: auto; margin-right: auto; display: flex;"
+       id="columnOnePic1Hover" onclick="columnElevenPic1Hover()"       
+           >i</p>
+  </div>
+
+  <!--card two column eleven-->
+  <div class="columnElevenPic2"
+  style="height:283px; width:auto; 
+  background-color:  #e4163d; color: white;
+  margin-right: 10px; border-radius: 4px;                                                           
+  position: relative;">
+  <img src="/burgersImages/JollySpaghettiWithYumburger.png" alt="JollySpaghettiWithYumberger"
+  style="background-color:aliceblue;
+   margin-left: auto; margin-right: auto;
+   width: 100%; ">
+   <p style="padding-left: 20px;
+             margin-top: 20px;">Jolly Spaghetti with <br>Yumburger</p> <br>  
+   <p style="padding-left: 20px; font-size: 13px;
+      margin-top: -12px">Starts at &#8369 112.00</p> 
+     <p style="position:absolute; font-size: 20px; text-align: center;
+     top: 8px; right: 10px; color: orange; align-items: center;
+     border: 2px solid orange; border-radius: 50px;
+     width: 15px; height: 15px; justify-content: center;
+     margin-left: auto; margin-right: auto; display: flex;"
+     id="columnOnePic1Hover" onclick="columnElevenPic2Hover()"       
+            >i</p>
+ </div>
+</div>
+
+<!-------------------------Twelve column of the content------------------------->
+
+<div class="columnTwelve">
+  <!--card one column Twelve-->
+  <div class="columnTwelvePic1"
+  style="height:283px; width:auto; 
+       background-color:  #e4163d; color: white;
+       margin-right: 10px; border-radius: 4px;                                                           
+       margin-left: 10px; position: relative; margin-top: 30px;">
+ <img src="/burgersImages/yumburgerHalfJolyySpaghetti&Reg.FriesSuperMeall.png" alt="YumburgerHalfJoyllySpaghettiAndRegFriesSuperMeal"
+ style="background-color:aliceblue;                   
+  width: 100%; height: auto; ">
+ <p style="padding-left: 20px;
+           margin-top: 20px;">Yumburger, Half Jolly <br> Spaghetti & Reg.Fries <br> Super meal</p>
+ <br>
+ <p style="padding-left: 20px; font-size: 13px;
+           margin-top: -12px">Starts at &#8369 125.00</p>
+  </div>
+</div>
+
+
+  <!--Footer Section-->
+  <div class="footer" style="margin-top: 40px;">
+    <!--Footer first div section-->
+  <div class="divOne"
+       style="color: white ; padding-top: 40px; padding-left: 30px;">
+
+    <h3 style="margin-bottom: 26px ;">Stay Connected</h3>
+    <div class="icons">
+     <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram" style="font-size:40px ; color: rgb(165, 40, 40); padding-right: 7px;" id="instagram"></i></a>
+     <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="font-size: 40px; color: rgb(165, 40, 40); padding-right: 7px;"></i></a>
+     <a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-square-twitter" style="font-size: 40px; color:rgb(165, 40, 40)"></i></a>
+    </div>
+  </div>
+   
+   <!--Footer second div section-->
+  <div class="divTwo"
+       style="color: white; padding-left: 30px; margin-top: 30px"
+     >
+    <h3>Stay up-to-date</h3>
+    <p style="margin-top: 12px ;">Don't miss out on exclusive online offers!</p>
+    <h4 style="margin-top: 20px;">Enter your Email</h4>
+  
+    <div class="signUp" style="display: flex; margin-top: -28px;">
+    <p style="border-bottom: 1px solid white;
+       width: 300px; "></p>
+    <h4 style="background-color: orange;
+       padding: 9px 38px; border-radius: 0px 25px 25px 0px; ">SIGN UP</h4>
+    </div>
+  </div>
+
+   <!--Footer third div section-->
+   <div class="divThree" style="color: white; padding-left: 30px;">
+    <h4 style="margin-top: 40px; margin-bottom: 25px;">Useful Links</h4>
+    
+    <div class="links">
+    <p>About Us</p>
+    <p>Stores</p>
+    <p>Privacy Policy</p>
+    <p>T&C</p>
+    <p>Feedback</p>
+    <p>Customer Care</p>
+    <p>Multi-Delivery</p>
+    </div>
+
+   </div>
+
+     <div class="copyright" style="color: white; margin-left: 3
+     0px; font-size: 13px; font-weight: bold; display: block; text-align: center;">
+      <p style="margin-top: 15px;">Copyright &copy; 2019 Joeybee. All Rights Reserved.</p>
+     </div>
+
+
+</div>
+
+
+
+
+</div>
+  <script src="/burgers.js"></script>
+</body>
+</html>
