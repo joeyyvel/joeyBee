@@ -30,9 +30,6 @@ function pageShow(){
         navClose();
          
    }
-
-
-
 /*----------------------------End of left navbar ------------------------*/
   
             /* ----modal section---- */
